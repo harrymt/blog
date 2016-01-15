@@ -1,0 +1,25 @@
+*
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #606060;
+}
+
+a:hover {
+  color: #959595;
+}
+
+/* Center everything */
+.post {
+  width: 90%;
+  margin-left: 4%;
+  margin-right: 5%;
+}
