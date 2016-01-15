@@ -1,7 +1,7 @@
 # Setup
 title:            Blog Title
 url:              http://www.harry.com/blog
-baseurl:          /
+baseurl:          /blog/
 
 author:
   name:           'Harry Mumford-Turner'
