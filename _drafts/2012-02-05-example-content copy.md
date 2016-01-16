@@ -1,36 +1,41 @@
 ---
 layout: post
-title: Example content
+title: Example post
 ---
 
 
 <div class="message">
-  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
+  The top class message
 </div>
 
-Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+Links <a href="#">dis parturient montes</a>.
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+- **Bold text use 2 stars**.
+- *Italic, use 1 star*, use `<em>`.
+- <del>Deleted</del> use `<del>` and <ins>underlined</ins> text should use `<ins>`.
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-
-## Inline HTML elements
-
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
-
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Mark otto</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
-
-Most of these elements are styled by browsers with few modifications on our part.
-
-## Heading
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 
 ### Code
 
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
+Cum sociis s dis `code element` montes.
+
+{% highlight css linenos %}
+
+.classname {
+  display: none;
+}
+
+{% endhighlight %}
+
+
+{% highlight scss linenos %}
+
+.classname {
+  display: none;
+
+  & > {
+    color: red;
+  }
+}
+
+{% endhighlight %}
