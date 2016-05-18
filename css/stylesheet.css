@@ -18,8 +18,47 @@ a:hover {
 }
 
 /* Center everything */
-.post {
+.content {
   width: 90%;
-  margin-left: 4%;
-  margin-right: 5%;
+  margin: auto;
+}
+
+.posts {
+  padding-bottom: 20px;
+}
+
+.post {
+  width: 60%;
+  margin: auto;
+}
+
+.post img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.post .img-caption {
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.footer {
+    color: #aaa;
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .post {
+    width: 90%;
+  }
+
 }
