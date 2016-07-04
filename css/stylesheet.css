@@ -85,8 +85,33 @@ a:hover {
   border-color: #000;
 }
 
+@media only screen and (max-width: 1000px) {
+  .highlight {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .highlight {
+    font-size: 13px;
+    margin-left: 0;
+  }
+
+  .lineno {
+    padding-right: 5px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .post {
     width: 90%;
+  }
+
+  .highlight {
+    font-size: 11px;
+  }
+
+  .lineno {
+    display: none;
   }
 }
