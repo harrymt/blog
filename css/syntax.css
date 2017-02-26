@@ -3,10 +3,6 @@
  *
  * https://github.com/mojombo/tpw/blob/master/css/syntax.css
  */
-
-/* Line number highlighting */
-.lineno { color: #D3D3D3; padding-right: 10px; }
-
 .highlight  { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */

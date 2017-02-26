@@ -31,8 +31,7 @@ The most difficult issue was getting the data into the correct format for Google
 
 I wrote a small script to parse the sleep data into the correct format for Google Calendar to process and I was away!
 
-{% highlight javascript linenos %}
-
+{% highlight javascript %}
 function checkIfNewRow() {
 
   if(latest_sleep_row != latest_processed_row) {
@@ -47,8 +46,6 @@ function checkIfNewRow() {
     // do nothing, as there is nothing new
   }
 }
-
-
 {% endhighlight %}
 
 
