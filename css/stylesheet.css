@@ -31,8 +31,8 @@ header nav ul li {
   padding: 10px;
 }
 
-/* Post items */
 
+/* Post items */
 .post-list {
   padding: 2px;
 }
@@ -45,6 +45,15 @@ header nav ul li {
 .post-list-item a {
   font-size: 25px;
   color: #444;
+}
+
+
+
+.suggested_pages {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 /* Buttons */
@@ -129,6 +138,7 @@ a:hover {
   width: 60%;
   margin: auto;
   padding-bottom: 20px;
+  max-width: 900px;
 }
 
 .post img {

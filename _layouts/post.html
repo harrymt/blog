@@ -3,6 +3,8 @@ layout: default
 ---
 
 <h1>{{ page.title }}</h1>
+
+
 <span class="post-date">{{ page.date | date_to_string }}</span>
 <span>&middot;</span>
 <span class="post-reading-time">
@@ -14,6 +16,30 @@ layout: default
 {% endif %}
 read
 </span>
+
 {{ content }}
 
+{% if page.previous.url or page.previous %}
+<div class="suggested_pages">
+  <h2>Suggested</h2>
+  <ul class="post-list">
+    {% if page.previous.url %}
+      <li class="post-list-item">
+        <a href="{{ site.baseurl }}/{{page.previous.url}}">{{page.previous.title}}</a>
+        <i> &mdash; {{ page.previous.date | date_to_long_string }}</i>
+        {{ page.previous.excerpt }}
+      </li>
+    {% endif %}
+    {% if page.next.url %}
+      <li class="post-list-item">
+        <a href="{{ site.baseurl }}/{{page.next.url}}">{{page.next.title}}</a>
+        <i> &mdash; {{ page.next.date | date_to_long_string }}</i>
+        {{ page.next.excerpt }}
+      </li>
+    {% endif %}
+  </ul>
+</div>
+{% endif %}
+
 <a class="button button-huge" href="{{ site.baseurl }}/">return home</a>
+
