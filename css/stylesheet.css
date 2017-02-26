@@ -85,6 +85,12 @@ a:hover {
   border-color: #000;
 }
 
+.highlight {
+  border-left: 3px solid #d0d0d0;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
 @media only screen and (max-width: 1000px) {
   .highlight {
     margin-left: 10px;
@@ -109,6 +115,10 @@ a:hover {
 
   .highlight {
     font-size: 11px;
+    overflow: auto;
+    border: none;
+    padding: 0;
+    margin: 0;
   }
 
   .lineno {
