@@ -6,3 +6,10 @@ baseurl:          /blog
 author:
   name:           'Harry Mumford-Turner'
   url:            http://www.harrymt.com/
+
+
+exclude: [
+      "CNAME",
+      "README.md"
+      ]
+include: ["_pages"]
