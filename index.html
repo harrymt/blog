@@ -3,15 +3,16 @@ layout: default
 title: Home
 ---
 
-<h2>Posts</h2>
+<h1>Posts</h1>
 
 <div class="posts">
 
-  <ul>
+  <ul class="post-list">
     {% for post in site.posts %}
-      <li>
+      <li class="post-list-item">
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         <i> &mdash; {{ post.date | date_to_long_string }}</i>
+        {{ post.excerpt }}
       </li>
     {% endfor %}
 
