@@ -12,4 +12,3 @@ exclude: [
       "CNAME",
       "README.md"
       ]
-include: ["_pages"]
