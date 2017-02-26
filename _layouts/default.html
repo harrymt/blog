@@ -12,7 +12,11 @@ layout: compress
     {% include header.html %}
 
     <div class="content">
-      {{ content }}
+      <div class="post">
+        {{ content }}
+
+        {% include footer.html %}
+      </div>
     </div>
 
   </body>
