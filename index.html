@@ -1,0 +1,25 @@
+---
+layout: default
+title: Home
+---
+
+<h2>Posts</h2>
+
+<div class="posts">
+
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <i> &mdash; {{ post.date | date_to_long_string }}</i>
+      </li>
+    {% endfor %}
+
+    {% if site.posts.size == 0 %}
+      <li>nothing here</li>
+    {% endif %}
+  </ul>
+
+</div>
+
+<p class="footer">Written by <a href="//harrymt.com">Harry Mumford-Turner</a></p>
