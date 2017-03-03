@@ -29,13 +29,16 @@ Now you can navigate to a url like http://username.github.io/repo_name and see t
 
 ## 2. (optional) Clone a boilerplate repo
 
-Having a boilerplate as starter code makes setting up side projects even faster. I create and manage a <a href="//github.com/harrymt/grunt-boilerplate">boilerplate</a> using <a href="//gruntjs.com">GruntJS</a> to handle all dependencies and help with processing <a href="//http://sass-lang.com">Sass</a>.
+Having a boilerplate as starter code makes setting up side projects even faster.
+
+I create and manage a <a href="//github.com/harrymt/grunt-boilerplate">boilerplate</a> using <a href="//gruntjs.com">GruntJS</a> to handle all dependencies and help with processing <a href="//http://sass-lang.com">Sass</a>.
 
 
 <a class="button button-huge" href="//github.com/harrymt/grunt-boilerplate">Download</a>
 
 The boilerplate uses Grunt to optimise the project. For example the below snippet minifies the index.html file to decrease load times.
 
+**Gruntfile.js**
 {% highlight javascript %}
 
   grunt.initConfig({
