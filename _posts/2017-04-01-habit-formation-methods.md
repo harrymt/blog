@@ -20,8 +20,8 @@ In the app, you need:
 5. Disable reminders when behaviour is routine.
 6. Checks if habit has already happened.
 
-
---
+<img src="{{ site.baseurl }}/img/streaks-app.png">
+<p class="img-caption"><a href="https://itunes.apple.com/gb/app/streaks/id963034692?mt=8">Streaks</a> app, an example of the first 4 requirements.</p>
 
 This article focuses on 2 primary sources, a paper from Switzerland and my MSc Supervisors PhD.
 
