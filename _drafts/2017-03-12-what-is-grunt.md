@@ -1,5 +1,7 @@
-
-# What is grunt?
+---
+layout: post
+title: What is grunt
+---
 
 - js task runner
 
