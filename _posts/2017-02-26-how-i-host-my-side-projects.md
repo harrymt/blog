@@ -7,7 +7,7 @@ title: How to Host unlimited Side Projects for free
 Host unlimited side projects using GitHub pages!
 </div>
 
-With <a href="//github.com/pages">GitHub pages</a> it is really easy to get a new side project up and running within minutes. Just follow these simple steps.
+<a href="//github.com/pages">GitHub pages</a> makes it easy to get a new side project up and running within minutes. Follow these simple steps.
 
 1. Create repo & activate GitHub Pages
 2. (optional) Clone a <a href="//github.com/harrymt/grunt-boilerplate">boilerplate repo</a>
@@ -64,5 +64,5 @@ The boilerplate uses Grunt to optimise the project. For example the below snippe
 
 ## 3. Start the side project
 
-Now you can easily start a <a href="//github.com/harrymt/mark">front end side project</a>. As unfortunately GitHub pages only allows static sites and client side Javascript.
+Now you can start making <a href="//github.com/harrymt/mark">front end side project</a>. But only static with sites as GitHub pages only allows Jekyll, HTML, CSS and JS.
 

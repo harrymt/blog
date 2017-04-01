@@ -4,21 +4,21 @@ title: Automatic Sleep Tracking
 ---
 
 <div class="message">
-How I successfully tracked my Sleep to my Google calendar.
+How I track my Sleep to my Google calendar.
 </div>
 
 ## When I sleep in, I want to know. When I am productive, I want to know.
 
-I started using the iOS app <a href="//www.sleepcycle.com">Sleep Cycle</a> to track my sleep and as an alarm. After a few weeks of using the app, I looked at my calendar and I couldn't tell when I woke up and went to sleep each night. I wanted to know when I slept-in on weekends, or got up early.
+I started using the iOS app <a href="//www.sleepcycle.com">Sleep Cycle</a> to track my sleep and as an alarm. After weeks of using the app, I looked at my calendar and I couldn't tell when I woke up and went to sleep each night. I wanted to know when I slept-in on weekends, or got up early.
 
 
 <img src="{{ site.baseurl }}/img/sleep-tracking.png">
 <p class="img-caption">Screenshot showing how my sleep is automatically added to my Google calendar.</p>
 
 
-I researched Sleep Cycle and found they did not have an API I could use. I paid the 69 pence for premium to access their online dashboard and found I could access the underlying data. However, this was a very long winded method to retrieving data and **wasn't a sustainable method** - if they changed their front-end codebase, I would need to update my script.
+I researched Sleep Cycle and found they did not have an API I could use. I paid the 69 pence for premium to access their online dashboard and found I could access the underlying data. This was a long-winded method to retrieving data and **wasn't a sustainable method** - if they changed their front-end codebase, I would need to update my script.
 
-I had previously experimented with tools to connect different services, such as **IFTTT** and **loved** them!
+I experimented with tools to connect different services, such as **IFTTT** and **loved** them!
 
 I noticed that Sleep Cycle syncs its data with Apple iOS health. I wanted to access that data and insert it into my calendar.
 **IFTTT** doesn't directly integrate with iOS Health, so I had to look around for other services that used that data and integrated with **IFTTT**.
@@ -51,7 +51,7 @@ function checkIfNewRow() {
 
 ## Sleep Cycle - Steps
 
-There are several steps to complete the integration process, they are as follows:
+These are the steps to complete the integration process:
 
 0. Make an <a href="//ifttt.com/">IFTTT</a> account.
 
@@ -67,7 +67,7 @@ There are several steps to complete the integration process, they are as follows
 
 6. Now at this point. Your sleep should be automatically tracked and new items post processed and appended to Sheet2. Now to add them to your calendar...
 
-7. Create a <a href="//zapier.com/">Zapier account</a> (I have a whole new account, just for sleep, as this will run everyday). Use <a href="//imgur.com/a/JNf9l">this recipe</a> to append the sleep to your calendar in the correct format.
+7. Create a <a href="//zapier.com/">Zapier account</a> (I have a whole new account, dedicated for sleep, as this will run everyday). Use <a href="//imgur.com/a/JNf9l">this recipe</a> to append the sleep to your calendar in the correct format.
 
 8. Test everything works by force adding sleep to UP > 2 hours.
 
@@ -80,6 +80,6 @@ There are several steps to complete the integration process, they are as follows
 
 ## Fitbit - Steps
 
-A few months later, I managed to get my hands on a Fitbit Flex and was so happy to find it was MUCH simpler to track my sleep!
-I simply used <a href="//ifttt.com/recipes/173925-document-your-daily-activity-in-a-google-spreadsheet">this</a> **IFTTT** trigger and it started logging whenever I slept!
-However, using Sleep Cycle was an interesting process where I utilised multiple services to achieve a goal. So I'm glad I did it!
+Months later, I managed to get my hands on a Fitbit Flex and tracking my sleep was MUCH simpler!
+Use <a href="//ifttt.com/recipes/173925-document-your-daily-activity-in-a-google-spreadsheet">this</a> **IFTTT** trigger and it starts logging whenever you sleep!
+Using Sleep Cycle was an interesting process where I utilised services to achieve a goal. I'm glad I did it!
