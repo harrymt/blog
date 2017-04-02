@@ -1,13 +1,15 @@
 
 # [Beginners] We are going to learn to build a website!
 
+Based on this [tutorial](http://www.htmldog.com/guides/html/beginner/tags/)
+
 - [Optional] Download a better text editor, such as Atom, Notepad++, SublimeText or VSCode.
 - Create a folder in your documents folder, or desktop, or wherever!
 - Open up your text editor and start making a website!
 
 ### 1. Create your first page
 
-- Type your website!
+Type your website...
 
 ```html
 Hello everyone!
@@ -20,7 +22,7 @@ Hello everyone!
   - So when we double click on the file our web browser, e.g. chrome, internet explorer or firefox, can open it
   - As it knows it is a webpage and not an image, or anything else.
 
-- We should now have something like this
+We should now have something like this
 
 ```
 My Website\
