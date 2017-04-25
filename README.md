@@ -5,7 +5,7 @@ An effort to spread anything interesting I found!
 
 ### Build
 - Install [Jekyll](http://jekyllrb.com/)
-- Run 'jekyll serve' to build the website and run a server.
+- Run `jekyll serve` to build the website and run a server.
 
 ### Technologies used
 - [Jekyll](http://jekyllrb.com/)
