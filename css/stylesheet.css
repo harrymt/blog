@@ -2,15 +2,26 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Georgia, serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606060;
+  color: #1d1d1d;
   background: #fafafa;
 }
 
-/* Header */
+h1 {
+  font-size: 3em;
+}
 
+h2 {
+  font-size: 2em;
+}
+
+h1, h2, span, .message, .post-list-item a {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Header */
 header {
     padding-bottom: 50px;
 }
@@ -28,9 +39,11 @@ header nav ul {
   padding: 0;
   list-style: none;
   line-height: 1em;
+
 }
 
 header nav ul li a {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444;
   text-decoration: none;
   display: block;
