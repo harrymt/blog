@@ -173,20 +173,16 @@ Combining information from these following 2 sources, produces the following lis
 
 ### 2. Give insights for strategy improvements and support changes.
 - Make them meaningful instant feedback & accumulated feedback
-#### 2a. Achievements and badges
 
 ### 3. Remind them about cues and remembering strategies.
 - Reminders can effectively support prospective memory in the short term.
 - Educate them about what they should perform
 
 ### 4. Rewards
-
 - A good form of external motivation because they don't change the ability to perform a behaviour, unless the reward itself is a tool that increases ability
 - Provide strong motivational source, but like all extrinsic motivators, these are less effective for changing behaviour in the long run, because externally motivated behaviour lasts as long as the external motivator exists.
 - Identifying methods that enable internalization of externally motivated behaviour is TBC.
-
-#### 4b. Points, Credits and Levels
-#### 4d. Virtual Goods
+- Achievements and badges
 
 ### 5. Disable cue reminders when behaviour is routine.
 - Relying on reminders in the long term can hinder habit development.
