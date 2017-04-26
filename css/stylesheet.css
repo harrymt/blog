@@ -17,7 +17,7 @@ h2 {
   font-size: 2em;
 }
 
-h1, h2, span, .message, .post-list-item a {
+h1, h2, span, .message, .post-list-item a, .button {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
