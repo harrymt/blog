@@ -1,5 +1,12 @@
+---
+layout: post
+title: How to Build a Website
+---
 
-# [Beginners] We are going to learn to build a website!
+<div class="message">
+[Beginners] We are going to learn to build a website!
+</div>
+
 
 Based on this [tutorial](http://www.htmldog.com/guides/html/beginner/tags/)
 

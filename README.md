@@ -1,3 +1,5 @@
+[![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://www.harrymt.com/blog)
+
 ## Code for harrymt.com/blog
 
 An effort to spread anything interesting I found!
