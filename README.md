@@ -7,7 +7,7 @@ An effort to spread anything interesting I found!
 
 ### Build
 
-- Install [Jekyll](http://jekyllrb.com/)
+- Install [Jekyll](http://jekyllrb.com/) with `gem install jekyll bundler`
 - Run `jekyll serve` to build the website and run a server.
 
 ### Technologies used
