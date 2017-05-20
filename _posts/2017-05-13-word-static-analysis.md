@@ -22,7 +22,7 @@ Integrate this with sublime (requires [nodejs](https://nodejs.org/en/), and [sub
 
 [Write Good Sublime Linter Plugin](https://github.com/ckaznocha/SublimeLinter-contrib-write-good) takes a few seconds to install. Gives you lots of helpful hints for writing well!
 
-<img src="http://t1.gstatic.com/images?q=tbn:ANd9GcTb7-D5cUUucjlJkD-BlXRS0GvBZ47txkHmRnyey34kjfA6omTn" width="250">
+<img src="https://t1.gstatic.com/images?q=tbn:ANd9GcTb7-D5cUUucjlJkD-BlXRS0GvBZ47txkHmRnyey34kjfA6omTn" width="250">
 
 The write-good plugin and the 'On Writing Well' book helped me massively while writing my MSc thesis at [UoB](http://www.bris.ac.uk/).
 
