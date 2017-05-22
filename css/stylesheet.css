@@ -234,4 +234,13 @@ a:hover {
   .lineno {
     display: none;
   }
+
+  /* Set appropriate tap target sizes (48px) */
+  header nav ul li a {
+    font-size: 1.1em;
+    padding-bottom: 1.5em;
+    padding-left: 1.7em;
+    padding-right: 1.7em;
+    padding-top: 1.5em;
+  }
 }
