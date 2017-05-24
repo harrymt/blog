@@ -64,5 +64,4 @@ The boilerplate uses Grunt to optimise the project. For example the below snippe
 
 ## 3. Start the side project
 
-Now you can start making <a href="//github.com/harrymt/mark">front end side project</a>. But only static with sites as GitHub pages only allows Jekyll, HTML, CSS and JS.
-
+Now you can start making <a href="//github.com/harrymt/mark">front end side project</a>. But bare in mind GitHub static sites allows Jekyll, HTML, CSS and JS.
