@@ -96,7 +96,7 @@ The [Taxonomy of Motivational Affordances](https://www.researchgate.net/publicat
 ## 7 Elements
 
 1. Assignments, Quests and Goals
-  - Assignments: Turn the bigger habit into smaller assignments to make it more joyful. Careful to not make them forced.
+  - Assignments: Turn the longer habit into smaller assignments to make it more joyful. Careful to not make them forced.
   - Quests: Same as assignments, but optional
   - Goals: User specified to support user autonomy. Should be specific and challenging to get better results
 
@@ -134,7 +134,7 @@ The PhD by my supervisor [Katarzyna Stawarz](https://uclic.ucl.ac.uk/people/kata
 
 4. Remind about cues and remembering
 strategies.
-  - Reminders can effectively support prospective memory in the short term.
+  - Reminders can support prospective memory in the short term.
 
 5. Disable cue reminders when the behaviour becomes a part of a routine.
   - Relying on reminders in the long term can hinder habit development.
@@ -160,10 +160,10 @@ Combining information from these following 2 sources, produces the following lis
 
 ### 1. Help users define a good remembering strategy
 - Make personalized, well defined, structured multi-cue routines & also support users choice of not setting remembering strategies
-- Provide examples of some
+- Provide an example
 
 #### 1a. Give users little difficult tasks (challenges)
-- Assignments: Turn the bigger habit into smaller assignments to make it more joyful. Careful to not make them forced.
+- Assignments: Turn the longer habit into smaller assignments to make it more joyful. Careful to not make them forced.
 - Quests: Same as assignments, but optional
 - Goals: User specified to support user autonomy. Should be specific and challenging to get better results
 
@@ -175,7 +175,7 @@ Combining information from these following 2 sources, produces the following lis
 - Make them meaningful instant feedback & accumulated feedback
 
 ### 3. Remind them about cues and remembering strategies.
-- Reminders can effectively support prospective memory in the short term.
+- Reminders can support prospective memory in the short term.
 - Educate them about what they should perform
 
 ### 4. Rewards
@@ -190,4 +190,3 @@ Combining information from these following 2 sources, produces the following lis
 
 ### 6. Check if habit has already happened
 - Easy to forget whether a task done automatically, completed.
-
