@@ -90,7 +90,8 @@ header nav ul li a.selected {
 
 .button {
   border: 1px solid black;
-  color: #fff;
+  background: #fff;
+  color: #555;
   display: block;
   padding: 5px;
   text-align: center;
@@ -99,8 +100,8 @@ header nav ul li a.selected {
   margin: auto;
 }
 
-.button:hover {
-  color: #ddd;
+.button-edit-post {
+  float: right;
 }
 
 .button-huge {
@@ -114,7 +115,7 @@ header nav ul li a.selected {
   width: 200px;
 }
 
-.button-huge:hover {
+.button:hover {
   background-color: #000;
   color: #fff;
   border-color: #000;
@@ -242,5 +243,13 @@ a:hover {
     padding-left: 1.7em;
     padding-right: 1.7em;
     padding-top: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .button-edit-post {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
   }
 }
