@@ -1,6 +1,6 @@
 [![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://www.harrymt.com/blog)
 
-# Code for harrymt.com/blog
+# harrymt.com/blog
 
 Source code for my personal blog.
 
