@@ -2,7 +2,7 @@
 
 # harrymt.com/blog
 
-Source code for my personal blog.
+Source code for my blog.
 
 
 ### Build
