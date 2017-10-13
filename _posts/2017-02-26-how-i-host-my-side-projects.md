@@ -25,9 +25,13 @@ Next activate GitHub pages, by going to the repo settings, scrolling down and cl
 <img src="{{ site.baseurl }}/img/activate-github-pages.png">
 <p class="img-caption">Create a repo with the name of the side project.</p>
 
-Now you can navigate to a url like http://username.github.io/repo_name and see the site!
+Now you can navigate to a url and see the site, such as:
 
-## 2. (optional) Clone a boilerplate repo
+```
+http://username.github.io/repo_name
+```
+
+## 2. Clone a boilerplate repo (optional)
 
 Having a boilerplate as starter code makes setting up side projects even faster.
 
