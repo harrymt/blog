@@ -9,6 +9,11 @@ body {
   background: #fafafa;
 }
 
+p,
+li {
+  font-size: 19px;
+}
+
 h1 {
   font-size: 3em;
 }
@@ -174,9 +179,19 @@ a:hover {
   padding-bottom: 20px;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 5px;
+  padding-top: 15px;
   border-radius: 2px;
 }
+
+.post .highlight {
+  overflow-x: scroll;
+  -ms-overflow-style: none;  // IE 10+
+}
+
+.post .highlight::-webkit-scrollbar {
+  display: none;
+}
+
 
 .post img {
   display: block;
@@ -226,8 +241,12 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  .content {
+  body {
     background-color: white;
+  }
+
+  .content {
+    padding-top: 0;
   }
 
   .post {
@@ -249,6 +268,10 @@ a:hover {
   }
 
   /* Set appropriate tap target sizes (48px) */
+  header nav ul li {
+    font-size: 18px;
+  }
+
   header nav ul li a {
     font-size: 1.1em;
     padding-bottom: 1.5em;
@@ -256,9 +279,7 @@ a:hover {
     padding-right: 1.5em;
     padding-top: 1.5em;
   }
-}
 
-@media only screen and (max-width: 500px) {
   .button-edit-post {
       width: 100%;
       margin-top: 10px;
