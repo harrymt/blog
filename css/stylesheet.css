@@ -168,8 +168,14 @@ a:hover {
 .post {
   width: 60%;
   margin: auto;
-  padding-bottom: 20px;
   max-width: 900px;
+
+  background-color: white;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5px;
+  border-radius: 2px;
 }
 
 .post img {
@@ -220,8 +226,14 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  .content {
+    background-color: white;
+  }
+
   .post {
     width: 90%;
+    background-color: inherit;
+    padding: 0;
   }
 
   .highlight {
