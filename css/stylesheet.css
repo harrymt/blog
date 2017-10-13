@@ -2,7 +2,8 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: Georgia, serif;
+
+  font-family: "Libre Franklin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #1d1d1d;
@@ -22,8 +23,8 @@ h2 {
   font-size: 2em;
 }
 
-h1, h2, span, .message, .post-list-item a, .button {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+h1, h2 {
+  font-weight: bold;
 }
 
 /* Header */
