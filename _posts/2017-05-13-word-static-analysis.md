@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Static Analysis for Writing Words
+title: Static Analysis for Writing
 ---
 
 <div class="message">
