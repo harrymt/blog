@@ -26,14 +26,14 @@ read
   <ul class="post-list">
     {% if page.previous.url %}
       <li class="post-list-item">
-        <a href="{{ site.baseurl }}/{{page.previous.url}}">{{page.previous.title}}</a>
+        <a href="{{ site.baseurl }}{{page.previous.url}}">{{page.previous.title}}</a>
         <i> &mdash; {{ page.previous.date | date_to_long_string }}</i>
         {{ page.previous.excerpt }}
       </li>
     {% endif %}
     {% if page.next.url %}
       <li class="post-list-item">
-        <a href="{{ site.baseurl }}/{{page.next.url}}">{{page.next.title}}</a>
+        <a href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}}</a>
         <i> &mdash; {{ page.next.date | date_to_long_string }}</i>
         {{ page.next.excerpt }}
       </li>
