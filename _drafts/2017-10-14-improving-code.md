@@ -89,23 +89,24 @@ import sys
 
 data = [
     '4',
-    '1234567890123'
+    '1234567890123',
     '1234567890128',
     '1111111111116',
     '1111111111118'
 ]
 
 for line in data:
-    thesum = 0
-    weight = 3
     if len(line) != 13:
         continue
+
+    thesum = 0
+    weight = 3
 
     for char in list(line):
         weight += 2
         weight %= 4
 
-        thesum = thesum + (int(char) * weight)
+        thesum += (int(char) * weight)
 
     if thesum % 10 == 0:
         print("VALID")
