@@ -224,6 +224,7 @@ a:hover {
   font-size: 18px;
 }
 
+
 @media only screen and (max-width: 1000px) {
   .highlight {
     margin-left: 10px;
