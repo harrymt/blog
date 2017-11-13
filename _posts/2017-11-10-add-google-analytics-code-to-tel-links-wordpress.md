@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to add Google Analytics code on mailto and tel links in Wordpress
+title: Track mailto and tel clicks in Wordpress with Google Analytics
 ---
 
 <div class="message">
