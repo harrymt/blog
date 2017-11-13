@@ -1,6 +1,13 @@
 
+
+<div class="search post" id="search-container">
+    <h4>Search all posts</h4>
+    <input type="text" id="search-input" placeholder="search...">
+    <ul id="results-container"></ul>
+</div>
+
 <div class="footer">
-<p>Written by <a href="//harrymt.com">Harry Mumford-Turner</a> // See the blog code on <a href="//github.com/harrymt/blog">GitHub</a></p>
+    <p>Written by <a href="//harrymt.com">Harry Mumford-Turner</a> // See the blog code on <a href="//github.com/harrymt/blog">GitHub</a></p>
 </div>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46475519-2"></script>
@@ -9,4 +16,15 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-46475519-2');
+</script>
+
+<!-- script pointing to jekyll-search.js -->
+<script src="{{ site.baseurl }}/js/simple-jekyll-search.min.js"></script>
+
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '{{ site.baseurl }}/search.json'
+});
 </script>
