@@ -7,6 +7,8 @@ title: How to Host unlimited Side Projects for free
 Host unlimited side projects using GitHub pages!
 </div>
 
+I host all my side projects [on GitHub](//github.com/harrymt), which totals to [5.6 Million lines](/blog/2017/10/28/five-million.html) of open-source code!
+
 <a href="//github.com/pages">GitHub pages</a> makes it easy to get a new side project up and running within minutes. Follow these simple steps.
 
 1. Create repo & activate GitHub Pages
@@ -69,3 +71,10 @@ The boilerplate uses Grunt to optimise the project. For example the below snippe
 ## 3. Start the side project
 
 Now you can start making <a href="//github.com/harrymt/mark">front end side project</a>. But bare in mind GitHub static sites allows Jekyll, HTML, CSS and JS.
+
+## Some of my side projects
+
+- [Simple Tel Tracking](/blog/2017/11/10/add-google-analytics-code-to-tel-links-wordpress.html) - Add Google Analytics tracking code email and telephone numbers in Wordpress
+- [Harrys Habits](//github.com/harrymt/harryshabits) - A chatbot to help you form new healthy habits
+- [Rate My Plate](//github.com/harrymt/rate-my-plate) - A twitter bot to rate the environemental impact of your food
+- [This blog](//github.com/harrymt/blog) - All of these posts are hosted on GitHub pages and open source
