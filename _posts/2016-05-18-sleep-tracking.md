@@ -9,7 +9,7 @@ How I track my Sleep to my Google calendar.
 
 ## When I sleep in, I want to know. When I am productive, I want to know.
 
-I started using the iOS app <a href="//www.sleepcycle.com">Sleep Cycle</a> to track my sleep and as an alarm. After weeks of using the app, I looked at my calendar and I couldn't tell when I woke up and went to sleep each night. I wanted to know when I slept-in on weekends, or got up early.
+I started using the iOS app <a href="//www.sleepcycle.com">Sleep Cycle</a> to track my sleep and as an alarm. It takes [66 days](/2017/04/01/habit-formation-methods.html) to form a habit, so after 66 days of using the app, I looked at my calendar and I couldn't tell when I woke up and went to sleep each night. I wanted to know when I slept-in on weekends, or got up early.
 
 
 <img src="{{ site.baseurl }}/img/sleep-tracking.png">
@@ -25,9 +25,11 @@ I noticed that Sleep Cycle syncs its data with Apple iOS health. I wanted to acc
 
 I settled on the Jawbone **UP** app (although I have never owned a Jawbone device) and used **IFTTT**, **Zapier** & **Google Calendar** to connect everything.
 
-## Issues
+## The Problem
 
 The most difficult issue was getting the data into the correct format for Google Calendar to process. I was almost regretting my decision to not create my own program, but then I remembered Google Sheets.
+
+## My Solution
 
 I wrote a small script to parse the sleep data into the correct format for Google Calendar to process and I was away!
 
