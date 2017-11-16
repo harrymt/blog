@@ -1,4 +1,4 @@
-### Setup a Drupal site in 1-line
+### One liner to install and setup a Drupal site
 
 The following shell script, sets up a Drupal site.
 
@@ -7,7 +7,7 @@ The following shell script, sets up a Drupal site.
 3. Installs a list of Drupal modules
 
 
-I also created [another one for Wordpress](https://gist.github.com/harrymt/6fd60b9eaa2272de64196cad493d7e58). 
+I also created (link to a wp blog post)[another one for Wordpress](https://gist.github.com/harrymt/6fd60b9eaa2272de64196cad493d7e58). 
 
 
 #### 1-line Build
