@@ -7,7 +7,7 @@ title: 1.1 Million SLOC
 I have contributed 1.1 Million Source Lines of code (SLOC) to open-source.
 </div>
 
-My <a href="//github.com/harrymt">GitHub profile</a> shows all my contributions. I used the the following command to calculate the SLOC:
+My <a href="//github.com/harrymt">GitHub profile</a> shows all my contributions to the Open Source community. I ran this command to calculate the number of Source Lines of Code (SLOC):
 
 This command prints lines of code for all source repos (not forks):
 
