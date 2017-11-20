@@ -1,4 +1,14 @@
-### One liner to install and setup a Drupal site
+---
+layout: post
+title: Install Drupal site with 1 command
+---
+
+<div class="message">
+Using this 1 line of code, you can setup and install a Drupal 7 website.
+</div>
+
+
+### Line Overview
 
 The following shell script, sets up a Drupal site.
 
@@ -7,18 +17,20 @@ The following shell script, sets up a Drupal site.
 3. Installs a list of Drupal modules
 
 
-I also created (link to a wp blog post)[another one for Wordpress](https://gist.github.com/harrymt/6fd60b9eaa2272de64196cad493d7e58). 
+I also created (another 1 liner for Wordpress](/2017/install-wordpress-with-1-line.md) -- https://gist.github.com/harrymt/6fd60b9eaa2272de64196cad493d7e58. 
 
 
-#### 1-line Build
+#### 1 Line Build
 
-Run this simple command on the server in (`cd /var/www/MySite.com/public_html`) that downloads [this gist](https://gist.github.com/harrymt/89cb1da0b08b8b41efa5b3d3887e34a7).
+Run this simple command on a server with a LAMP stack in a website directory (e.g. `cd /var/www/MySite.com/public_html`)
+
+The line downloads [this gist](https://gist.github.com/harrymt/89cb1da0b08b8b41efa5b3d3887e34a7) and runs it.
 
 ```bash
 source <(curl -s https://gist.githubusercontent.com/harrymt/89cb1da0b08b8b41efa5b3d3887e34a7/raw/50eb17909aa186ee60c9bf3ec9d8a0bf07d01116/drupal-7.sh)
 ```
 
-Or download the [full script](https://gist.github.com/harrymt/89cb1da0b08b8b41efa5b3d3887e34a7) below.
+Or download and manually run the [full script](https://gist.github.com/harrymt/89cb1da0b08b8b41efa5b3d3887e34a7) below.
 
 
 ##### Full Script
@@ -88,7 +100,7 @@ echo "========================="
 echo "Installing Drupal 7 Modules."
 echo "========================="
 
-# Commented lines are Drupal 7.0 modules
+# Comment modules you don't want to install
 install_drupal_plugin adminimal_admin_menu
 install_drupal_plugin admin_views
 install_drupal_plugin admin_theme
@@ -122,7 +134,7 @@ install_drupal_plugin backup_migrate
 install_drupal_plugin insert
 
 # Remove bash script if it exists
-rm -f drupal-7.sh
+rm drupal-7.sh
 
 echo "========================="
 echo "Installation is complete."
