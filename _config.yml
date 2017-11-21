@@ -1,11 +1,11 @@
 # Setup
-title: harrymt blog
-url: http://www.harry.com/blog
+title: Harry's Blog
+url: https://www.harry.com/blog
 baseurl: /blog
 
 author:
   name: 'Harry Mumford-Turner'
-  url: http://www.harrymt.com/
+  url: https://www.harrymt.com/
 
 
 exclude: [
