@@ -219,7 +219,7 @@ a:hover {
   padding-top: 50px;
 }
 
-div.highlight {
+pre.highlight {
   border-left: 3px solid #d0d0d0;
   padding-left: 15px;
   font-size: 18px;

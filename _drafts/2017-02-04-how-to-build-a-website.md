@@ -18,6 +18,7 @@ Based on this [tutorial](http://www.htmldog.com/guides/html/beginner/tags/)
 
 Type your website...
 
+**mypage.html**
 ```html
 Hello everyone!
 ```
@@ -31,6 +32,7 @@ Hello everyone!
 
 We should now have something like this
 
+**Folder Structure**
 ```
 My Website\
   mypage.html
@@ -42,6 +44,7 @@ My Website\
 ### 2. Making it better
 
 ```html
+<!-- mypage.html -->
 <!DOCTYPE html>
 <html>
 <body>

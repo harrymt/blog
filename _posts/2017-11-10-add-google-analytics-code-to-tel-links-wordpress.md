@@ -17,48 +17,52 @@ I created a Wordpress plugin to simply go through all the `mailto` and `tel` `<a
 - Add it to your site and enable the plugin
 
 Before:
-{% highlight html %}
+
+```html
 <a href="mailto:harrymt@me.com">Contact me</a>
-{% endhighlight %}
+```
 
 After:
-{% highlight html %}
+
+```html
 <a onclick="ga('send','event','Mailto Tracking: harrymt@me.com','Click/Touch');" href="mailto:harrymt@me.com">Contact me</a>
-{% endhighlight %}
+```
 
 The plugin sends back to Google:
 
-{% highlight javascript %}
+```javascript
 ga(
   'send',
   'event',
   'Mailto Tracking: harrymt@me.com',
   'Click/Touch'
 );
-{% endhighlight %}
+```
 
 For tel links, it is the same.
 
 Before:
-{% highlight html %}
+
+```html
 <a href="tel:+0759606141">Bristol 0759606141</a>
-{% endhighlight %}
+```
 
 After:
-{% highlight html %}
+
+```html
 <a onclick="ga('send','event','Phone Call Tracking: 0759606141','Click/Touch');" href="tel:+0759606141">Bristol 0759606141</a>
-{% endhighlight %}
+```
 
 The [plugin](//wordpress.org/plugins/simple-tel-tracking/) sends:
 
-{% highlight javascript %}
+```javascript
 ga(
   'send',
   'event',
   'Phone Call Tracking: 0759606141',
   'Click/Touch'
 );
-{% endhighlight %}
+```
 
 ### Open Source
 

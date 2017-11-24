@@ -31,7 +31,7 @@ By applying the formula used above, we check if the ISBN is valid.
 
 ### First Solution
 
-{% highlight python %}
+```python
 import sys
 
 data = [
@@ -61,30 +61,30 @@ for line in data:
     else:
         print("NOT VALID")
 
-{% endhighlight %}
+```
 
 
 
 
 ### Second Solution
 
-{% highlight python %}
+```python
 if weight == 3:
     weight = 1
 else:
     weight = 3
-{% endhighlight %}
+```
 
 Turns into:
 
-{% highlight python %}
+```python
 weight += 2
 weight %= 4
-{% endhighlight %}
+```
 
 Results in full source:
 
-{% highlight python %}
+```python
 import sys
 
 data = [
@@ -113,4 +113,4 @@ for line in data:
     else:
         print("NOT VALID")
 
-{% endhighlight %}
+```

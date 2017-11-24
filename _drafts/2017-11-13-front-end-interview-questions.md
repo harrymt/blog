@@ -25,19 +25,17 @@ Our front-end position required 4 things.
 
 #### 1. HTML
 
-{% highlight html %}
-
+```html
 <a class="btn">Primary</a>
 
 <a class="btn btn-secondary">Secondary</a>
-
-{% endhighlight %}
+```
 
 
 #### 2. CSS
 
 
-{% highlight less %}
+```less
 @primary: #03A9F4;
 @secondary: white;
 
@@ -46,7 +44,7 @@ Our front-end position required 4 things.
   border-radius: 2px;
   border: 1px solid darken(@primary, 10%);
   color: @secondary;
-  font: 11px system-ui;  
+  font: 11px system-ui;
   margin: 10px;
   padding: 7px;
   text-align: center;
@@ -57,10 +55,10 @@ Our front-end position required 4 things.
   background-color: @secondary;
   color: @primary;
 }
-{% endhighlight %}
+```
 
 
-{% highlight less %}
+```less
 // Bonus
 
 .btn:hover {
@@ -76,7 +74,7 @@ body {
   margin-top: 50px;
 }
 
-{% endhighlight %}
+```
 
 
 #### 3. JavaScript

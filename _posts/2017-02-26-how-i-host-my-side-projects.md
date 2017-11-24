@@ -45,7 +45,8 @@ I create and manage a <a href="//github.com/harrymt/grunt-boilerplate">boilerpla
 The boilerplate uses Grunt to optimise the project. For example the below snippet minifies the index.html file to decrease load times.
 
 **Gruntfile.js**
-{% highlight javascript %}
+
+```javascript
 
   grunt.initConfig({
     htmlmin: { // Minify HTML
@@ -65,7 +66,7 @@ The boilerplate uses Grunt to optimise the project. For example the below snippe
 
   grunt.registerTask('default', ['htmlmin']);
 
-{% endhighlight %}
+```
 
 
 ## 3. Start the side project

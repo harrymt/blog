@@ -17,7 +17,7 @@ The following shell script, sets up a Drupal site.
 3. Installs a list of Drupal modules
 
 
-I also created (another 1 liner for Wordpress](/2017/install-wordpress-with-1-line.md) -- https://gist.github.com/harrymt/6fd60b9eaa2272de64196cad493d7e58. 
+I also created (another 1 liner for Wordpress](/2017/install-wordpress-with-1-line.md) -- https://gist.github.com/harrymt/6fd60b9eaa2272de64196cad493d7e58.
 
 
 #### 1 Line Build
@@ -35,7 +35,7 @@ Or download and manually run the [full script](https://gist.github.com/harrymt/8
 
 ##### Full Script
 
-```
+```bash
 #!/bin/bash
 
 #
