@@ -82,7 +82,7 @@ The positives and negatives of this solution are:
 
 
 ```javascript
-function printCombinations(input, start) {
+function printCombinations(input, output, start) {
   var str = input.substring(0, start);
   
   for (var i = start; i < input.length; i++) {
@@ -92,10 +92,11 @@ function printCombinations(input, start) {
       c = 1;
       printCombinations(
         str + '0' + input.substring(i + 1),
+        output,
         i
       );
     }
-    str = str + c;
+    str = str + c; 
   }
   output.push(str);
 }
@@ -107,6 +108,7 @@ function printCombinations(input, start) {
 
 **Pros:**
 - Uses less computations
+- Doesn't require a global variable `output`
 
 **Cons:**
 - Uses recursion (is this even a con?)
@@ -128,6 +130,30 @@ Input: ??? - Better Case: Total Computations: 129 (52 less computations)
 
 Input: ???? - Worst Case:  Total Computations: 461
 Input: ???? - Better Case: Total Computations: 273 (188 less computations)
+```
+
+**Better Case counting computations**
+
+```javascript
+function printCombinations(input, output, start) {
+  var str = input.substring(0, start); ct += 2;
+  
+  for (var i = start; i < input.length; i++) { ct += 2;
+    var c = input.charAt(i); ct += 2;
+
+    ct++;
+    if (c == "?") {
+      c = 1;  ct++;
+      printCombinations(
+        str + '0' + input.substring(i + 1),
+        output,
+        i
+      ); ct += 2;
+    }
+    str = str + c;  ct++;
+  }
+  output.push(str);  ct++;
+}
 ```
 
 I also discovered I had a bug in my worst case algorithm after counting these computations and debugging the function using Chrome dev tools JavaScript debugger.
