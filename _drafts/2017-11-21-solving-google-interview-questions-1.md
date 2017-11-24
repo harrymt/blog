@@ -35,6 +35,7 @@ For this problem, my worst case solution is this:
 **Setup Code**
 ```javascript
 var output = [];
+var input = "011?0";
 printCombinations(input);
 console.log(output);
 ```
@@ -63,7 +64,7 @@ When it gets to a '?' character, it builds a new string using a 0 instead of thi
 
 **Complexity:**
 
-`O(2N) / O(N)`, where N is the length of the input
+`O(2^n)`, where N is the number of wildcards `?`. 2 because there are 2 options the wildcard could be.
 
 The positives and negatives of this solution are:
 
@@ -102,10 +103,38 @@ function printCombinations(input, start) {
 
 **Complexity:**
 
-`O(N)`?
+`O(2^n)`, where N is the number of wildcards `?`. 2 because there are 2 options the wildcard could be.
 
 **Pros:**
 - Uses less computations
 
 **Cons:**
 - Uses recursion (is this even a con?)
+
+
+### Measuring Computations
+
+I initially thought the [better case](#better-case) used less computations than the [worst case](#worse-case). I decided to test this theory by adding up a counter for each line I thought needed a computation. See the [source code on CodePen](https://codepen.io/harrymt/pen/KyoZLe).
+
+```
+Input: ? - Worst Case:  Total Computations: 21
+Input: ? - Better Case: Total Computations: 19 (3 less computations)
+
+Input: ?? - Worst Case:  Total Computations: 65
+Input: ?? - Better Case: Total Computations: 57 (8 less computations)
+
+Input: ??? - Worst Case:  Total Computations: 181
+Input: ??? - Better Case: Total Computations: 129 (52 less computations)
+
+Input: ???? - Worst Case:  Total Computations: 461
+Input: ???? - Better Case: Total Computations: 273 (188 less computations)
+```
+
+I also discovered I had a bug in my worst case algorithm after counting these computations and debugging the function using Chrome dev tools JavaScript debugger.
+
+<img src="{{ site.baseurl }}/img/google-interview-1.png">
+
+Chrome's JavaScript debugger revealled my error and I fixed it. Overall resulting in two solutions to this problem, one with slightly less computations than the other.
+
+- [View the demo code on Codepen](https://codepen.io/harrymt/pen/KyoZLe?editors=1111)
+
