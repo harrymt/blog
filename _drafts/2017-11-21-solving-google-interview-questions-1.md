@@ -32,11 +32,15 @@ To solve problems like these, a good method is to think of *any* solution you ca
 
 For this problem, my worst case solution is this:
 
+**Setup Code**
 ```javascript
 var output = [];
 printCombinations(input);
 console.log(output);
+```
 
+**Algorithm**
+```javascript
 function printCombinations(input) {
   var str = "";
   for(var i = 0; i < input.length; i++){
@@ -69,18 +73,39 @@ The positives and negatives of this solution are:
 **Cons:**
 - Performs unnecessary calculations - every time a ? appears, the function calls itself and starts at the beginning of the string again, re-checking each character to see if it is a '?'.
 - Uses recursion? (is this even a con?)
-
+- Requires a global variable `output`
 
 ### Better Case
 
 - Improved function to take in start position: `printComb(in, 0)`, `i` is set to start pos. When we call it again, we use: `printComb(newIn, i + 1)`
+
+
+```javascript
+function printCombinations(input, start) {
+  var str = input.substring(0, start);
+  
+  for (var i = start; i < input.length; i++) {
+    var c = input.charAt(i);
+
+    if (c == "?") {
+      c = 1;
+      printCombinations(
+        str + '0' + input.substring(i + 1),
+        i
+      );
+    }
+    str = str + c;
+  }
+  output.push(str);
+}
+```
 
 **Complexity:**
 
 `O(N)`?
 
 **Pros:**
-- Slightly more efficient
+- Uses less computations
 
 **Cons:**
 - Uses recursion (is this even a con?)
