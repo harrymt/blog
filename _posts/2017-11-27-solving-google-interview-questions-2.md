@@ -7,14 +7,15 @@ title: Solving Google Interview Questions
 Part 2.
 </div>
 
-Another technical algorithm question asked at Google interviews, is coined Two Sum, taken from [a user on Glassdoor](https://www.glassdoor.com/Interview/this-is-just-a-two-sum-problem-given-a-sorted-array-and-a-number-X-find-all-pairs-whose-sum-is-X-in-a-efficient-way-QTN_380183.htm).
+Another technical algorithm question asked at Google interviews, is coined 'Two Sum', taken from [a user on Glassdoor](https://www.glassdoor.com/Interview/this-is-just-a-two-sum-problem-given-a-sorted-array-and-a-number-X-find-all-pairs-whose-sum-is-X-in-a-efficient-way-QTN_380183.htm).
 
 
 ### Question:
 
 ```
-Given an array of integers, return indices of the two numbers such that they add up to a specific target.
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
+Given an array of integers, return indices of the two numbers such that
+they add up to a specific target. You may assume that each input would
+have exactly one solution and you may not use the same element twice.
 ```
 
 Input: array e.g. [2, 7, 11, 15], and a target sum, e.g. 9
@@ -80,16 +81,21 @@ We want to have a HashMap of all elements that are on the way to being summed. S
 
 **Algorithm**
 ```javascript
-
-foreach el
-  if(!inHashMap(el)):
-    hm.add(target - el, el);
-  else:
-    return [hm[el], el]
+var twoSumsHashMaps = function(nums, target) {
+  var map = new Map();
+  for(var i = 0; i < nums.length; i++) {
+    if(map.get(nums[i]) === undefined) {
+      map.set(target - nums[i], i);
+    } else {
+      return [map.get(nums[i]), i];
+    }
+  }
+};
 ```
 
 **Pros**
 - Only has to loop through the array once
+- Uses a lot less computations
 
 **Cons**
 - Slightly more complex
@@ -98,13 +104,77 @@ foreach el
 
 `O(N)`, where N is the size of the array. This algorithm runs in Linear time as to lookup a hashmap only costs `O(1)` and looping through an array costs `O(N)`, therefore `O(N + 1)` = `O(N)`.
 
-<img src="{{ site.baseurl }}/img/google-interview-2.png">
+
+### Comparing Computations
+
+When counting the amount of computations both of the algorithms perform, it is clear that the better case does a lot less when the input is greater.
+
+**Worst Case**
+
+```javascript
+var twoSum = function(nums, target) {
+    for(var i = 0; i < nums.length; i++) { ct += 2;
+        for(var j = i + 1; j < nums.length; j++) { ct += 3;
+            if(nums[i] + nums[j] == target) { ct += 2;
+                return [i, j];
+            }
+        }
+    }
+    return [];
+};
+```
+
+**Better Case**
+
+```javascript
+var twoSumsHashMaps = function(nums, target) {
+  var map = new Map(); ct++;
+  for(var i = 0; i < nums.length; i++) { ct += 2;
+    if(map.get(nums[i]) === undefined) { ct += 2;
+      map.set(target - nums[i], i); ct += 2;
+    } else {
+      ct += 1;
+      return [map.get(nums[i]), i];
+    }
+  }
+};
+```
+
+For example:
+
+```
+Input:  [3, 2, 4, 7, 10]
+Target: 17
+
+Worst Case : 40
+Better Case: 28
+```
+
+However, when the input is small, the computations very similar, and actually the one with Hashmaps performs slightly more:
+
+```
+Input:  [3, 2, 4]
+Target: 6
+
+Worst Case : 15
+Better Case: 16
+```
+
 
 - [View the solution on Codepen](https://codepen.io/harrymt/pen/xPJxbG?editors=1111)
 
 ## Final Solution
 
 ```javascript
-
+var twoSums = function(nums, target) {
+  var map = new Map();
+  for(var i = 0; i < nums.length; i++) {
+    if(map.get(nums[i]) === undefined) {
+      map.set(target - nums[i], i);
+    } else {
+      return [map.get(nums[i]), i];
+    }
+  }
+};
 ```
 
