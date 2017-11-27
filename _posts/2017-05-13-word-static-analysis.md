@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Static Analysis for Writing
+tags: [writing]
 ---
 
 <div class="message">

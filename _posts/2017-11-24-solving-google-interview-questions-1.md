@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Solving Google Interview Questions
+tags: [interview]
 ---
 
 <div class="message">

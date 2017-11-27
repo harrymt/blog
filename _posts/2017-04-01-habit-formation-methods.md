@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Habit-Formation Methods
+tags: [habits]
 ---
 
 <div class="message">

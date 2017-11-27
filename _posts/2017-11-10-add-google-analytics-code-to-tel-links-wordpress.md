@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Track mailto and tel clicks in Wordpress with Google Analytics
+tags: [php, javscript, wordpress, google-analytics]
 ---
 
 <div class="message">

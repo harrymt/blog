@@ -12,7 +12,14 @@ title: Home
       <li class="post-list-item">
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         <i> &mdash; {{ post.date | date_to_long_string }}</i>
-        {{ post.excerpt }}
+        <div>
+          {{ post.excerpt | strip_html }}
+        </div>
+        <ul class="tags">
+          {% for tag in post.tags %}
+            <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
       </li>
     {% endfor %}
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The First Website I Built
+tags: [css, scss, html, php]
 ---
 
 <div class="message">

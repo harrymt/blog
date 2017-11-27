@@ -237,6 +237,15 @@ pre.highlight {
   border-radius: 2px;
 }
 
+.search .result:not(:first-child)  {
+  border-top: 1px solid #eee;
+}
+
+.search .result {
+  margin-bottom: 15px;
+  padding-top: 17px;
+}
+
 .search input {
   width: 100%;
   height: 20px;
@@ -245,6 +254,31 @@ pre.highlight {
   padding: 5px;
   font-size: 16px;
 }
+
+.search a {
+  color: #444;
+}
+
+
+/* Tags */
+.tags {
+  margin-top: 0;
+  padding: 0;
+}
+
+.tags li {
+  background-color: #ececec;
+  border-radius: 5px;
+  border: 1px solid #fbfbfb;
+  color: #868686;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 1px;
+  margin: 5px;
+  margin-left: 0;
+}
+
 
 
 @media only screen and (max-width: 1000px) {

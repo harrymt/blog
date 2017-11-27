@@ -6,7 +6,7 @@ layout: null
     {
       "title"    : "{{ post.title | escape }}",
       "category" : "{{ post.category }}",
-      "tags"     : "{{ post.tags | join: ', ' }}",
+      "tags"     : "{% for tag in post.tags %}<li>{{ tag }}</li>{% endfor %}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "date"     : "{{ post.date }}"
     } {% unless forloop.last %},{% endunless %}

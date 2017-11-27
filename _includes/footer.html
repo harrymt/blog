@@ -25,6 +25,7 @@
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
+  searchResultTemplate: '<li class="result"><a href="{url}" title="{desc}">{title}</a><ul class="tags">{tags}</ul></li>',
   json: '{{ site.baseurl }}/search.json',
   fuzzy: true
 });

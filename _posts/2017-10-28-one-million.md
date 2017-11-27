@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 1.1 Million SLOC
+tags: [github, bash]
 ---
 
 <div class="message">

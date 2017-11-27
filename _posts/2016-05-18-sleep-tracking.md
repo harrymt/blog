@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Automatic Sleep Tracking
+tags: [javascript, habits]
 ---
 
 <div class="message">

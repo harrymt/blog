@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to Host unlimited Side Projects for free
+tags: [github, javascript]
 ---
 
 <div class="message">
