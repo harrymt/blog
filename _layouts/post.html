@@ -33,6 +33,11 @@ read
         <a href="{{ site.baseurl }}{{page.previous.url}}">{{page.previous.title}}</a>
         <i> &mdash; {{ page.previous.date | date_to_long_string }}</i>
         {{ page.previous.excerpt }}
+        <ul class="tags">
+          {% for tag in page.previous.tags %}
+            <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
       </li>
     {% endif %}
     {% if page.next.url %}
@@ -40,6 +45,11 @@ read
         <a href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}}</a>
         <i> &mdash; {{ page.next.date | date_to_long_string }}</i>
         {{ page.next.excerpt }}
+        <ul class="tags">
+        {% for tag in page.next.tags %}
+            <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
       </li>
     {% endif %}
   </ul>

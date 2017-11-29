@@ -9,14 +9,19 @@ permalink: 404.html
   <p class="lead">Sorry, we can't find that page, <a href="{{ site.baseurl }}/">head home</a> to try finding it again.</p>
   {% if site.posts.size != 0 %}
     <p>...or maybe you can find it below</p>
-    <h2>Posts</h2>
   {% endif %}
 
-  <ul>
+
+  <ul class='search'>
     {% for post in site.posts %}
-      <li>
+      <li class="result">
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         <i> &mdash; {{ post.date | date_to_long_string }}</i>
+        <ul class="tags">
+          {% for tag in post.tags %}
+            <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
       </li>
     {% endfor %}
 
