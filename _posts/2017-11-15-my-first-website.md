@@ -5,7 +5,7 @@ tags: [css, scss, html, php]
 ---
 
 <div class="message">
-The first ever website I created and how I tried to improved it.
+The first ever website I created and how I tried to improve it.
 </div>
 
 ## Amazing Tees
