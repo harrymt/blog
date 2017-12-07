@@ -52,8 +52,7 @@ Results in (after manually merging):
 "HTML": 194,733
 "Java": 148,768
 "JavaScript": 106,832
-"Makefile": 81
-"Makefile": 962
+"Makefile": 1,043
 "Matlab": 44,085
 "Perl": 1510
 "Python": 1,769,616
