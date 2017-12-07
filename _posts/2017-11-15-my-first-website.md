@@ -21,7 +21,7 @@ I received 86.5% for the coursework (a first) - the marker must've enjoyed my us
 
 ## Improving it
 
-I decided to improve it and see what I have learnt after 4 years and [5.6 million lines of code](/blog/2017/10/28/five-million.html) later.
+I decided to improve it and see what I have learnt after 4 years and [1.1 million lines of code](/blog/2017/10/28/one-million.html) later.
 
 ### Step 1. Move to HTML5
 
