@@ -56,7 +56,9 @@ public class ListNode {
 
 ### Worst Case
 
-
+- I set out to create a recursive function. The base case was to return null if both lists were null, and if one was null and the other wasn't set the null one to start at zero.
+- Then we perform the addition at the current node and check to see if it is over 10, if so we use the mod function to get the leftovers and use these to create the next node.
+- We then create a new Node for the next and call the function again.
 
 **Algorithm**
 ```java
@@ -91,7 +93,6 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         leftover = 1;
     }
 
-
     if(l1.next == null) {
         l1.next = new ListNode(leftover);
     } else {
@@ -109,53 +110,298 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
 ...
 
-**Pros:**
-- ...
-
-**Cons:**
-- ...
-
 
 ### Better Case
 
-...
+The algorithm was optimised to reduce the number of calculations.
 
 **Algorithm**
 ```java
-...
+public ListNode addTwoNumbersSolution2(ListNode l1, ListNode l2) {
+    if(l1 == null && l2 == null) { return null; }
+    
+    // We can conclude at this point, that if one list is null, the other must be != null.
+    if(l2 == null) { l2 = new ListNode(0); }
+    if(l1 == null) { l1 = new ListNode(0); }
+
+    // We remove these if statements, because l1 and l2 are never not going to be
+    // null here.
+
+    // Therefore, we don't need those variables v1, v2.
+    int result = l1.val + l2.val;
+    int leftover = 0; 
+
+    if(result > 10) {
+        leftover = result % 10; 
+        result = result - 10; 
+    } else if(result == 10) {
+        result = 0; 
+        leftover = 1; 
+    }
+
+    if(leftover > 0) {
+        // If we start the next node at 0, then we can remove the else
+        if(l1.next == null) { l1.next = new ListNode(0); }
+        l1.next.val += 1; 
+    }
+
+    ListNode output = new ListNode(result); 
+    output.next = addTwoNumbersSolution2(l1.next, l2.next); 
+
+    return output;
+}
 ```
-
-**Pros**
-- ...
-
-**Cons**
-- ...
 
 **Complexity**
 
 `O(...)` ...
 
 
+### Even Better Case
+
+**Algorithm**
+```java
+public ListNode addTwoNumbersSolution2(ListNode l1, ListNode l2) {
+    if(l1 == null && l2 == null) { return null; }
+    
+    // We can conclude at this point, that if one list is null, the other must be != null.
+    if(l2 == null) { l2 = new ListNode(0); }
+    if(l1 == null) { l1 = new ListNode(0); }
+
+    // We remove these if statements, because l1 and l2 are never not going to be
+    // null here.
+
+    // Therefore, we don't need those variables v1, v2.
+    int result = l1.val + l2.val;
+    int leftover = 0; 
+
+    if(result > 10) {
+        leftover = result % 10; 
+        result = result - 10; 
+    } else if(result == 10) {
+        result = 0; 
+        leftover = 1; 
+    }
+
+    if(leftover > 0) {
+        // If we start the next node at 0, then we can remove the else
+        if(l1.next == null) { l1.next = new ListNode(0); }
+        l1.next.val += 1; 
+    }
+
+    ListNode output = new ListNode(result); 
+    output.next = addTwoNumbersSolution2(l1.next, l2.next); 
+
+    return output;
+}
+```
+
+**Complexity**
+
+`O(...)` ...
+
 ### Computations
 
-...
+The [Even Better](#even-better-case) case used a lot less computations.
 
-**Worst Case**
+```
+> [9]
+> [9]
+[8, 1]
+iterations:
+Worst       39
+Better      35
+Even Better 29
 
-```java
-...
+> [1,9]
+> [1,2]
+[2, 1, 1]
+Worst       55
+Better      46
+Even Better 38
 ```
 
-**Better Case**
+### Runtime
 
-```java
-...
+When using Leetcode, the runtime of the algorithm is displayed when you submit, each solution was submitted with surprising results.
+
+```
+Worst       49 ms
+Better      49 ms
+Even Better 74 ms
 ```
 
-- [View the solution on Codepen](https://codepen.io/harrymt/pen/...)
+The `Even Better` algorithm with less computations, is slightly slower.
+
+
+### Optimising the runtime
+
+First, I identified differences between the Better case and Even better case.
+
+#### Improvement 1
+
+I found unnessesary computation happening when we reach the end of the list, i.e. next is null.
+
+```java
+l1.next.val++;
+```
+
+**Before**
+
+```java
+// Better Case
+if(result >= 10) {
+    result = result - 10; 
+    if(l1.next == null) { l1.next = new ListNode(0); }
+    l1.next.val++;
+}
+```
+
+**After**
+
+- This small change turned the runtime to from `74 ms` to `69 ms`.
+
+```java
+if(result >= 10) {
+    result = result - 10; 
+    if(l1.next == null) {
+        l1.next = new ListNode(1); // Set it to 1
+    } else { // Only if it exists.
+        l1.next.val++;
+    }
+}
+```
+
+#### Improvement 2
+
+I noticed that I knew the outcome of `result = result - 10` when `result` was `10`, therefore I could simply manually set it to be 0.
+
+**Before**
+
+```java
+if(result >= 10) {
+    result = result - 10; 
+    if(l1.next == null) {
+        l1.next = new ListNode(1); // Set it to 1
+    } else { // Only if it exists.
+        l1.next.val++;
+    }
+}
+```
+- This small change turned the runtime to from `69 ms` to `53 ms`.
+
+**After**
+
+```java
+if(result >= 10) {
+    if(result > 10) {
+        result = result - 10;
+    } else {
+        result = 0;
+    } 
+    if(l1.next == null) {
+        l1.next = new ListNode(1);
+    } else {
+        l1.next.val++;
+    }
+}	   
+```
+
+This results in an even even better case:
+
+### Even Even Better case
+
+```java
+public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    if(l1 == null && l2 == null) { return null; }
+    if(l2 == null) { l2 = new ListNode(0); }
+    if(l1 == null) { l1 = new ListNode(0); }
+
+    int result = l1.val + l2.val;
+    
+    if(result >= 10) {
+        if(result > 10) {
+            result = result - 10;
+        } else {
+            result = 0;
+        } 
+        if(l1.next == null) {
+            l1.next = new ListNode(1);
+        } else {
+            l1.next.val++;
+        }
+    }
+
+    ListNode output = new ListNode(result); 
+    output.next = addTwoNumbers(l1.next, l2.next); 
+
+    return output;
+}
+```
+
+
+## Final Iterations and Runtime
+
+**Iterations**
+```
+> [9]
+> [9]
+[8, 1]
+
+Worst            39
+Better           35
+Even Better      29
+Even Even Better 29
+
+> [1,9]
+> [1,2]
+[2, 1, 1]
+
+Worst            55
+Better           46
+Even Better      38
+Even Even Better 38
+```
+
+**Run Time**
+
+```
+Worst            49 ms
+Better           49 ms
+Even Better      74 ms
+Even Even Better 53 ms
+```
+
+Although, the Even Even Better solution ran slightly slower (4 ms slower), it used a lot less computations (40% less).
+
+- [View the solution on Leet code](//leetcode.com/playground/sUuKt5Uo)
 
 ## Final Solution
 
 ```java
-...
+public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    if(l1 == null && l2 == null) { return null; }
+    if(l2 == null) { l2 = new ListNode(0); }
+    if(l1 == null) { l1 = new ListNode(0); }
+
+    int result = l1.val + l2.val;
+    
+    if(result >= 10) {
+        if(result > 10) {
+            result = result - 10;
+        } else {
+            result = 0;
+        } 
+        if(l1.next == null) {
+            l1.next = new ListNode(1);
+        } else {
+            l1.next.val++;
+        }
+    }
+
+    ListNode output = new ListNode(result); 
+    output.next = addTwoNumbers(l1.next, l2.next); 
+
+    return output;
+}
 ```
