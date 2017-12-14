@@ -57,8 +57,8 @@ public class ListNode {
 ### Worst Case
 
 - I set out to create a recursive function. The base case was to return null if both lists were null, and if one was null and the other wasn't set the null one to start at zero.
-- Then we perform the addition at the current node and check to see if it is over 10, if so we use the mod function to get the leftovers and use these to create the next node.
-- We then create a new Node for the next and call the function again.
+- I performed the addition at the current node and checked to see if it is over 10, if so I use the mod function to get the leftovers and use this to create the next node.
+- I create a new Node for the next Node and call the function again.
 
 **Algorithm**
 ```java
