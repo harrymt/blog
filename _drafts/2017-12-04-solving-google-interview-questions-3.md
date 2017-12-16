@@ -9,7 +9,7 @@ Part 3.
 </div>
 
 I recently discovered [LeetCode](//leetcode.com), a website with lots of algorithm questions and answers, with an area for just Google questions (premium only).
-[One question](//leetcode.com/problems/add-two-numbers) on this, was of medium difficulty:
+[This question](//leetcode.com/problems/add-two-numbers) is of medium difficulty:
 
 ### Question:
 
