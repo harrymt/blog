@@ -1,7 +1,7 @@
 
 
 <div class="search post" id="search-container">
-    <h4>Search all posts</h4>
+    <label for="search-input">Search all posts</label>
     <input type="text" id="search-input" placeholder="search...">
     <ul id="results-container"></ul>
 </div>
@@ -25,7 +25,7 @@
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  searchResultTemplate: '<li class="result"><a href="{url}" title="{desc}">{title}</a><ul class="tags">{tags}</ul></li>',
+  searchResultTemplate: '<li class="result"><a href="{url}" title="{title}">{title}</a><ul class="tags">{tags}</ul></li>',
   json: '{{ site.baseurl }}/search.json',
   fuzzy: true
 });
