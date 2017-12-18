@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to write to a log file and print to screen
+title: How to write to a log file and print to screen with bash
 ---
 
 <div class="message">
