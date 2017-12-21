@@ -1,0 +1,22 @@
+# How to Setup Magento 2 Locally
+
+- Download Full Release (ZIP with no sample data) https://magento.com/tech-resources/download
+- Extract downloaded ziped folder and rename to just Magento, and set permissions to be R/w for everyone
+- Make sure you have PHP version 7.1+ run `curl -s http://php-osx.liip.ch/install.sh | bash -s 7.1` to install 7.1 then add `export PATH=/usr/local/php5/bin:$PATH` to .profile, or .zshrc etc
+- Create mysql database for Magento,
+	- `mysql -u root -p`
+	- `show databases;`
+	- `CREATE DATABASE magento`
+- View `/Magento/setup/` etc `http://localhost/~harrym/Magento/setup/`
+- Set Folder permissions, `chmod -R 777 Magento/app/etc && chmod -R 777 Magento/var && chmod -R 777 Magento/pub/media && chmod -R 777 Magento/pub/static && chmod -R 777 Magento/generated`
+- (optional) Might have to install missing PHP extensions: `brew install php71-mcrypt` and `brew install php71-intl` (and add them to `/etc/php.ini`, e.g. `extension="/usr/local/Cellar/php71-mcrypt/7.1.11_17/mcrypt.so"`) then restart apache `sudo apachectl restart`
+- Install Magento
+- After the install reset permissions `sudo  chmod -R g-w Magento/app/etc` and enable admin to be viewable
+- Use phpmyadmin or adminer to access database and change Table core_config_data web/unsecure/base_urland web/secure/base_url to http://localhost/~harrym/Magento/
+- Clear cache: `php bin/magento cache:flush` or `rm -rf var/cache/*; rm -rf var/session/*`
+- Navigate to `http://localhost/~harrym/Magento/admin_<admin_url>`
+- Change to our theme: `http://localhost/~harrym/Magento/admin_<admin_url>/theme/design_config` (change to theme name)
+- Enable developer mode `php bin/magento deploy:mode:set developer`
+- `php bin/magento setup:upgrade` then `php -dmemory_limit=5G bin/magento setup:di:compile` Note second command increases memory limit for specific command
+- Set more permissions `chmod -R 777 generated/*`
+- Disable modules that are throwing errors:, e.g. `php bin/magento module:disable <module_name>`
