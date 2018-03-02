@@ -186,7 +186,6 @@ a:hover {
 }
 
 .post .highlight {
-  overflow-x: scroll;
   -ms-overflow-style: none;  // IE 10+
 }
 
