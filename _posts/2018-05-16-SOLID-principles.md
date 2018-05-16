@@ -1,4 +1,8 @@
-# SOLID Principles
+---
+layout: post
+title: S.O.L.I.D. Principles
+tags: [software engineering]
+---
 
 Code examples of the SOLID principles.
 
@@ -9,13 +13,13 @@ Code examples of the SOLID principles.
 - [Dependency Inversion](#dependency-inversion)
 
 
-#### Single Responsibility Principle
+### Single Responsibility Principle
 
-> A class should take care of a Single Responsibility.
+A class should take care of a Single Responsibility.
 
 - Code example [Srp.cs](https://github.com/harrymt/SOLID-principles/blob/master/README.md#single-responsibility-principle)
 
-##### Bad Way
+#### Bad Way
 
 This Add method does too much, it shouldnt know how to write to the log and add a customer.
 
@@ -37,7 +41,7 @@ class Customer
 }
 ```
 
-##### Good Way
+#### Good Way
 
 Good Way, not violating the single responsibility principle.
 Now we abstract the logger, so its writing the error.
@@ -66,13 +70,13 @@ class FileLogger
 }
 ```
 
-#### Open for Extension Closed for Modification
+### Open for Extension Closed for Modification
 
-> Prefer extension over modification.
+Prefer extension over modification.
 
 - Code example [Ocp.cs](https://github.com/harrymt/SOLID-principles/blob/master/README.md#open-for-extension-closed-for-modification)
 
-##### Bad Way
+#### Bad Way
 
 Violating the Open Closed Principle
 This is bad, because at the moment, there are 2 types
@@ -98,7 +102,7 @@ class Customer
 }
 ```
 
-##### Good Way
+#### Good Way
 
 This is better, because we structure the code so its
 easier to extend and hard to modify
@@ -130,13 +134,13 @@ class AnotherCustomer : CustomerBetter
 }
 ```
 
-#### Liskov Substitution Principle
+### Liskov Substitution Principle
 
-> Parent class should be able to refer child objects seamlessly during runtime polymorphism.
+Parent class should be able to refer child objects seamlessly during runtime polymorphism.
 
 - Code example [Lsp.cs](https://github.com/harrymt/SOLID-principles/blob/master/README.md#liskov-substitution-principle)
 
-##### Bad Way
+#### Bad Way
 
 BAD: Violating Liskov substitution principle
 The parent should easily the replace the child object and not break any functionality, only lose some.
@@ -195,7 +199,7 @@ class ViolatingLiskovs
 }
 ```
 
-##### Good Way
+#### Good Way
 
 ```c#
 interface IDiscount {
@@ -235,13 +239,13 @@ class AdheringToLiskovs
 }
 ```
 
-#### Interface Segregation Principle
+### Interface Segregation Principle
 
-> Client should not be forced to use an interface, if it doesn't need it.
+Client should not be forced to use an interface, if it doesn't need it.
 
 - Code example [Isp.cs](https://github.com/harrymt/SOLID-principles/blob/master/README.md#interface-segregation-principle)
 
-##### Bad Way
+#### Bad Way
 
 If we want to add more functionality, don't add to existing
 interfaces, segregate them out.
@@ -259,7 +263,7 @@ interface ICustomerImproved
 }
 ```
 
-##### Good Way
+#### Good Way
 
 Just create another interface, that a class can ALSO extend from
 
@@ -294,13 +298,13 @@ void ManipulateCustomers()
 }
 ```
 
-#### Dependency Inversion
+### Dependency Inversion
 
-> High level modules should not depend on low-level modules, but should depend on abstraction.
+High level modules should not depend on low-level modules, but should depend on abstraction.
 
 - Code example [Dip.cs](https://github.com/harrymt/SOLID-principles/blob/master/README.md#dependency-inversion)
 
-##### Bad Way
+#### Bad Way
 
 Bad: We are relying on the customer to say that we
 are using a File Logger, rather than another type of
@@ -333,7 +337,7 @@ internal class Customer
 }
 ```
 
-##### Good Way
+#### Good Way
 
 Good: We pass in a Logger interface to the customer
 so it doesnt know what type of logger it is
