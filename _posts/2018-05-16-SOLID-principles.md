@@ -78,10 +78,10 @@ Prefer extension over modification.
 
 #### Bad Way
 
-Violating the Open Closed Principle
+Violating the Open Closed Principle.
 This is bad, because at the moment, there are 2 types
 of customer, if we want to add another customer type
-we have to add a `if else` below. So Modifying the existing code
+we have to add a `if else` below and will modify the existing code.
 
 ```c#
 class Customer
@@ -105,7 +105,7 @@ class Customer
 #### Good Way
 
 This is better, because we structure the code so its
-easier to extend and hard to modify
+easier to extend and hard to modify.
 
 
 ```c#
@@ -142,10 +142,9 @@ Parent class should be able to refer child objects seamlessly during runtime pol
 
 #### Bad Way
 
-BAD: Violating Liskov substitution principle
-The parent should easily the replace the child object and not break any functionality, only lose some.
-e.g. here, we don't want this to add an enquiry so we have to throw
-a new exception, that is violating the principle
+BAD: Violating Liskov substitution principle.
+The parent should easily the replace the child object and not break any functionality, only lose some, e.g. here, we don't want this to add an enquiry so we have to throw
+a new exception, that is violating the principle.
 
 ```c#
 class Enquiry : Customer
@@ -265,7 +264,7 @@ interface ICustomerImproved
 
 #### Good Way
 
-Just create another interface, that a class can ALSO extend from
+Just create another interface, that a class can also extend from.
 
 ```c#
 interface ICustomerV1 : ICustomer
@@ -339,8 +338,8 @@ internal class Customer
 
 #### Good Way
 
-Good: We pass in a Logger interface to the customer
-so it doesnt know what type of logger it is
+We pass in a Logger interface to the customer
+so it doesnt know what type of logger it is.
 
 ```c#
 class BetterCustomer
