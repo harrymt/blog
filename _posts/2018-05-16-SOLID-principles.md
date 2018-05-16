@@ -1,7 +1,7 @@
 ---
 layout: post
 title: S.O.L.I.D. Principles
-tags: [software engineering]
+tags: [software engineering, c#]
 ---
 
 Code examples of the SOLID principles.
