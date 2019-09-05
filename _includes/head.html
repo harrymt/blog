@@ -1,24 +1,35 @@
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1"
+  />
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }}
+    {{ site.title }}
     {% else %}
-      {{ page.title }} &middot; {{ site.title }}
+    {{ page.title }} &middot; {{ site.title }}
     {% endif %}
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/stylesheet.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/stylesheet.css" />
 
   <!-- Font -->
-  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Libre+Franklin"
+    rel="stylesheet"
+  />
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="RSS"
+    href="/atom.xml"
+  />
 </head>
