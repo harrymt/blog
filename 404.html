@@ -6,28 +6,27 @@ permalink: 404.html
 
 <div class="page">
   <h1 class="page-title">404: Page not found</h1>
-  <p class="lead">Sorry, we can't find that page, <a href="{{ site.baseurl }}/">head home</a> to try finding it again.</p>
+  <p class="lead">
+    Sorry, we can't find that page,
+    <a href="{{ site.baseurl }}/">head home</a> to try finding it again.
+  </p>
   {% if site.posts.size != 0 %}
-    <p>...or maybe you can find it below</p>
+  <p>...or maybe you can find it below</p>
   {% endif %}
 
-
-  <ul class='search'>
+  <ul class="search">
     {% for post in site.posts %}
-      <li class="result">
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        <i> &mdash; {{ post.date | date_to_long_string }}</i>
-        <ul class="tags">
-          {% for tag in post.tags %}
-            <li>{{ tag }}</li>
-          {% endfor %}
-        </ul>
-      </li>
-    {% endfor %}
-
-    {% if site.posts.size == 0 %}
-      <li>nothing here</li>
+    <li class="result">
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <i> &mdash; {{ post.date | date_to_long_string }}</i>
+      <ul class="tags">
+        {% for tag in post.tags %}
+        <li>{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %} {% if site.posts.size == 0 %}
+    <li>nothing here</li>
     {% endif %}
   </ul>
-
 </div>
