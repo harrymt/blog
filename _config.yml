@@ -4,11 +4,7 @@ url: https://www.harry.com/blog
 baseurl: /blog
 
 author:
-  name: 'Harry Mumford-Turner'
+  name: "Harry Mumford-Turner"
   url: https://www.harrymt.com/
 
-
-exclude: [
-      "CNAME",
-      "README.md"
-      ]
+exclude: ["CNAME", "README.md"]

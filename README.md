@@ -4,10 +4,9 @@
 
 Source code for my blog.
 
-
 ### Build
 
-- Install [Jekyll](http://jekyllrb.com/) with `gem install jekyll bundler`
+- Install [Jekyll](http://jekyllrb.com/) with `sudo gem install jekyll bundler`
 - Run `jekyll serve` to build the website and run a server.
 
 ### Technologies used

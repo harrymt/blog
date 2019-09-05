@@ -1,32 +1,39 @@
-
-
 <div class="search post" id="search-container">
-    <label for="search-input">Search all posts</label>
-    <input type="text" id="search-input" placeholder="search...">
-    <ul id="results-container"></ul>
+  <label for="search-input">Posts</label>
+  <input type="text" id="search-input" placeholder="Search for posts" />
+  <ul id="results-container"></ul>
 </div>
 
 <div class="footer">
-    <p>Written by <a href="//harrymt.com">Harry Mumford-Turner</a> // See the blog code on <a href="//github.com/harrymt/blog">GitHub</a></p>
+  <p>
+    Written by <a href="//harrymt.com">Harry Mumford-Turner</a> // See the blog
+    code on <a href="//github.com/harrymt/blog">GitHub</a>
+  </p>
 </div>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46475519-2"></script>
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=UA-46475519-2"
+></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-46475519-2');
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", "UA-46475519-2");
 </script>
 
 <!-- script pointing to jekyll-search.js -->
 <script src="{{ site.baseurl }}/js/simple-jekyll-search.min.js"></script>
 
 <script>
-SimpleJekyllSearch({
-  searchInput: document.getElementById('search-input'),
-  resultsContainer: document.getElementById('results-container'),
-  searchResultTemplate: '<li class="result"><a href="{url}" title="{title}">{title}</a><ul class="tags">{tags}</ul></li>',
-  json: '{{ site.baseurl }}/search.json',
-  fuzzy: true
-});
+  SimpleJekyllSearch({
+    searchInput: document.getElementById("search-input"),
+    resultsContainer: document.getElementById("results-container"),
+    searchResultTemplate:
+      '<li class="result"><a href="{url}" title="{title}">{title}</a><ul class="tags">{tags}</ul></li>',
+    json: "{{ site.baseurl }}/search.json",
+    fuzzy: true
+  });
 </script>
