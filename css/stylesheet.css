@@ -1,4 +1,3 @@
-
 body {
   padding: 0;
   margin: 0;
@@ -23,13 +22,14 @@ h2 {
   font-size: 2em;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: bold;
 }
 
 /* Header */
 header {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 header nav {
@@ -45,7 +45,6 @@ header nav ul {
   padding: 0;
   list-style: none;
   line-height: 1em;
-
 }
 
 header nav ul li a {
@@ -68,7 +67,6 @@ header nav ul li a.selected {
   background: #eee;
 }
 
-
 /* Post items */
 .post-list {
   padding: 2px;
@@ -83,8 +81,6 @@ header nav ul li a.selected {
   font-size: 25px;
   color: #444;
 }
-
-
 
 .suggested_pages {
   margin-bottom: 50px;
@@ -128,7 +124,6 @@ header nav ul li a.selected {
   border-color: #000;
 }
 
-
 .button-big {
   border-radius: 3px;
   padding: 6px;
@@ -137,7 +132,6 @@ header nav ul li a.selected {
 .button-clear {
   color: #111;
 }
-
 
 .button-clear:hover {
   background-color: #000;
@@ -153,9 +147,6 @@ header nav ul li a.selected {
   background: #2b2b2b;
   outline: none;
 }
-
-
-
 
 a:hover {
   color: #959595;
@@ -186,14 +177,13 @@ a:hover {
 }
 
 .post .highlight {
-  -ms-overflow-style: none;  // IE 10+
+  -ms-overflow-style: none;
   overflow: scroll;
 }
 
 .post .highlight::-webkit-scrollbar {
   display: none;
 }
-
 
 .post img {
   display: block;
@@ -226,7 +216,6 @@ pre.highlight {
   overflow-x: scroll;
 }
 
-
 .search {
   margin: auto;
   max-width: 900px;
@@ -238,7 +227,7 @@ pre.highlight {
   border-radius: 2px;
 }
 
-.search .result:not(:first-child)  {
+.search .result:not(:first-child) {
   border-top: 1px solid #eee;
 }
 
@@ -260,7 +249,6 @@ pre.highlight {
   color: #444;
 }
 
-
 /* Tags */
 .tags {
   margin-top: 0;
@@ -279,8 +267,6 @@ pre.highlight {
   margin: 5px;
   margin-left: 0;
 }
-
-
 
 @media only screen and (max-width: 1000px) {
   .highlight {
@@ -336,7 +322,7 @@ pre.highlight {
   }
 
   header nav ul li a {
-    font-size: 1.0em;
+    font-size: 1em;
     padding-bottom: 1.5em;
     padding-left: 1.7em;
     padding-right: 1.7em;
@@ -345,8 +331,8 @@ pre.highlight {
   }
 
   .button-edit-post {
-      width: 100%;
-      margin-top: 10px;
-      margin-bottom: 10px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
