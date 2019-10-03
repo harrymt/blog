@@ -1,12 +1,8 @@
 ---
 layout: post
-title: Optional Chaining in Typescript 3.7
+title: New features in Typescript
 tags: [javascript, typescript]
 ---
-
-<div class="message">
-TypeScript 3.7 features, optional chaining.
-</div>
 
 Microsoft recently annouced the beta for [Typescript 3.7](https://devblogs.microsoft.com/typescript/announcing-typescript-3-7-beta/). This has several useful features coming into the next version of TypeScript soon. My favourite is Optional Chaining.
 
