@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New features in Typescript
+title: TypeScript 3.7 Features
 tags: [javascript, typescript]
 ---
 
