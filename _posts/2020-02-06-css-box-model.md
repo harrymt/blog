@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title: Do you know the CSS box model?
 tags:
