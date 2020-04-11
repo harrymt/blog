@@ -268,6 +268,12 @@ pre.highlight {
   margin-left: 0;
 }
 
+.pluralsight h3 {
+  margin: 0;
+  font-size: inherit;
+  display: inline;
+}
+
 @media only screen and (max-width: 1000px) {
   .highlight {
     margin-left: 10px;
