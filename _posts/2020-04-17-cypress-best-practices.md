@@ -31,9 +31,7 @@ If you have text that you want to change but you don't want to break the cypress
 
 Don't use `wait()`.
 
-Cypress will retry the previous command if an assertion fails.
-
-It will keep doing this until the global timeout is reached.
+Cypress will retry the previous command if an assertion fails and will keep doing this until the global timeout is reached.
 
 If you need to wait for an action, there are assertions you can use to wait for an element to not exist, e.g. `cy.contains('Successfully uploaded').should('not.exist')`.
 
@@ -45,11 +43,11 @@ A classic example is waiting for a toast notification to disappear before taking
 > [https://docs.cypress.io/guides/references/best-practices.html#Unnecessary-Waiting](https://docs.cypress.io/guides/references/best-practices.html#Unnecessary-Waiting)
 
 ## 3. Cucumber Steps
-This project used Cucumber integration and I created a lot of generic cucumber selectors to help with writing tests.
+This project used Cucumber integration and I found creating a lot of generic cucumber selectors helped with writing tests.
 
 Search for these before writing your own!
 
-Each feature should be self contained and can be independently verified.
+Be sure that each feature file should be self contained and can be independently verified.
 
 > [https://www.npmjs.com/package/cypress-cucumber-preprocessor](https://www.npmjs.com/package/cypress-cucumber-preprocessor)
 
