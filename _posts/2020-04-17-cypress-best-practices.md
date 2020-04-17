@@ -2,20 +2,20 @@
 layout: post
 title: 7 Best Practices for Cypress
 tags:
-  - Cypress
-  - Typescript
+  - cypress
+  - typescript
 ---
 
-I recently refactored and improved a large test suite library that used Cypress as the main test automation tool
+I recently refactored and improved a large test suite library that used [Cypress](https://www.cypress.io/) as the main test automation tool.
 Here are some best practices and common mistakes I found for working with this library.
 
-1. Selecting Elements
-2. Unnecessary Wait
-3. Cucumber Steps
-4. Cypress Commands
-5. User Permissions
-6. Control Data
-7. How to Debug Failing Tests
+[1. Selecting Elements](#1-selecting-elements)
+[2. Unnecessary Wait](#2-unnecessary-wait)
+[3. Cucumber Steps](#3-cucumber-steps)
+[4. Cypress Commands](#4-cypress-commands)
+[5. User Permissions](#5-user-permissions)
+[6. Control Data](#6-control-data)
+[7. How to Debug Failing Tests](#7-how-to-debug-failing-tests)
 
 
 # 1. Selecting Elements
