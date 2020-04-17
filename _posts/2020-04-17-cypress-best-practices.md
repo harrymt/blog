@@ -76,3 +76,8 @@ Our tests were uploaded to Circle CI, to debug the failing tests, follow these s
 1. Tests tab
 2. Artifacts Tab
 3. Search for 'failed' and 'diff'
+
+
+--
+
+Overall I would say that Cypress has been the best automation tool I have used and even when we evaluated other alternatives, such as [Taiko, by Gauge](https://github.com/getgauge/taiko), we found that Cypress was the most mature and supported all our use cases.
