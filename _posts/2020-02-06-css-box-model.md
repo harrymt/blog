@@ -31,6 +31,9 @@ div {
 }
 ```
 
+I struggled too! But here is a good cheat sheet:
+
+
 ### box-sizing: border-box
 
 - Add the `padding` and `border` to `width`
