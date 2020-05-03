@@ -43,7 +43,7 @@ I struggled too! But here is a good cheat sheet:
 
 ### box-sizing: content-box
 
-- Add the `padding` then `border` to `width`
+- Add the `padding` and `border` to `width`
 
 ![box-sizing: content-box;]({{site.baseurl}}/img/box-sizing-content-box.png)
 
