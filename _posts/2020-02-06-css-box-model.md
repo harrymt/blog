@@ -4,7 +4,7 @@ title: Do you know the CSS box model?
 tags:
   - CSS
 ---
-How well do you know the CSS Box Model and the differences between different `box-sizing` properties?
+How well do you know the CSS Box Model? Do you know the differences between the `box-sizing` properties?
 
 
 Take this div, how is it rendered?
