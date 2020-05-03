@@ -7,7 +7,7 @@ tags:
 How well do you know the CSS Box Model? Do you know the differences between the `box-sizing` properties?
 
 
-Take this div, how is it rendered?
+Take this div below for example:
 
 ```css
 div {
@@ -17,6 +17,17 @@ div {
   padding: 5px;
   margin: 20px;
   border: 5px solid blue;
+}
+```
+
+Would you be able to define the values that are computed when it's rendered?
+
+What about if we add a single property:
+
+```css
+div {
+  /* ... */
+  box-sizing: border-box
 }
 ```
 
