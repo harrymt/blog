@@ -20,13 +20,13 @@ I have put together a [GitHub repo](https://github.com/harrymt/js-mocking-demo) 
 To install the mocking library Sinon, to give you spies, stubs and mocks:
 
 ```
-$ npm i -D sinon
+$ yarn add sinon
 ```
 
 To have the `describe("...")` and `it("...")`:
 
 ```
-$ npm i -D mocha
+$ yarn add mocha
 ```
 
 ### Basic In-memory storage
@@ -35,7 +35,7 @@ To follow along with the example repo, clone it, then call the following command
 
 ```
 $ git clone https://github.com/harrymt/js-mocking-demo.git .
-$ npm test
+$ yarn test
 ```
 
 ## Stubs
@@ -53,7 +53,7 @@ Stubbing (replaces) a function.
 
 ```js
 // index.js
-const {stub, assert} = require("sinon");
+const { stub, assert } = require("sinon");
 
 const database = require("./src/db");
 const store = require("./src/store")(database);
@@ -87,7 +87,7 @@ Pros:
 ```js
 // index.js
 
-const {spy, assert} = require("sinon");
+const { spy, assert } = require("sinon");
 const database = require("./src/db");
 const store = require("./src/store")(database);
 
@@ -111,7 +111,7 @@ Use mocks to stub out whole objects.
 ```js
 // index.js
 
-const {mock, assert} = require("sinon");
+const { mock, assert } = require("sinon");
 const database = require("./src/db");
 const store = require("./src/store")(database);
 
