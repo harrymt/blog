@@ -6,7 +6,7 @@ tags:
   - typescript
 ---
 
-I recently refactored and improved a large test suite library that used [Cypress](https://www.cypress.io/) as the main test automation tool.
+I recently refactored and improved a large test suite library that used Cypress as the main test automation tool.
 Here are some best practices and common mistakes I found for working with this library.
 
 1. [Selecting Elements](#1-selecting-elements)
@@ -17,6 +17,8 @@ Here are some best practices and common mistakes I found for working with this l
 6. [Control Data](#6-control-data)
 7. [How to Debug Failing Tests](#7-how-to-debug-failing-tests)
 
+
+- [Cypress.io](https://www.cypress.io/)
 
 ## 1. Selecting Elements
 
