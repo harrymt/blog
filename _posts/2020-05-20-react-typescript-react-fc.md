@@ -63,7 +63,7 @@ const Header = ({ loading }: { loading: boolean }) => {
 
 ## Pros of React.FC
 
-#### 1. Helps with Component props
+### 1. Helps with Component props
 
 React components have by default 4 props, e.g. `Header.displayName`.
 
@@ -85,7 +85,7 @@ Property 'displayName' does not exist on
 type '() => Element'.ts(2339)
 ```
 
-#### 2. Gives access to typed children
+### 2. Gives access to typed children
 
 ```tsx
 const Header: React.FC<{ loading: boolean }> = ({ loading, children }) => {
@@ -125,7 +125,7 @@ const Header = ({ loading, children } : { loading: boolean; children: React.Reac
 
 ## Cons of React.FC
 
-#### 1. Doesn't help with returning undefined
+### 1. Doesn't help with returning undefined
 
 You cannot return `undefined` from a React component, and even with the `React.FC` type, the compiler will only tell you at runtime.
 
@@ -136,7 +136,7 @@ This usually means a return statement is missing.
 Or, to render nothing, return null.
 ```
 
-#### 2. Provides access to `props.children` when you may not want it
+### 2. Provides access to `props.children` when you may not want it
 
 With `React.FC` I can put children under my component and they won't render but will be typed correctly.
 
@@ -173,7 +173,7 @@ export const Example = () => {
 ```
 
 
-#### 3. Difficulty creating a Sub.Component pattern
+### 3. Difficulty creating a Sub.Component pattern
 
 It is very difficult to create the typical Component and Component.SubComponent pattern (without adding lots of additional workarounds) with `React.FC`.
 
@@ -202,5 +202,5 @@ But due to unnecessary addition of children, that you normally do not need, you 
 ### More reading
 
 - [create-react-app issue to remove React.FC](https://github.com/facebook/create-react-app/pull/8177)
-- [React Typescript Cheat Sheet, React.FC](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components)
+- [React Typescript Cheat Sheet](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components)
 
