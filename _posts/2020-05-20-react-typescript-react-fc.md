@@ -162,8 +162,8 @@ const Header = () => {
 }
 
 export const Example = () => {
-  // Type error: Property 'children' does not exist on type
-  // 'IntrinsicAttributes & { loading: any; }'. ts(2322)
+  // Type error: Property 'children' does not exist on
+  // type 'IntrinsicAttributes & { loading: any; }'. ts(2322)
   return (
     <Header>
       <p>{T`Children`}</p>
