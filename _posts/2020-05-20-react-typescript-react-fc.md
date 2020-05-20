@@ -181,7 +181,7 @@ e.g. without `React.FC`, to create this:
 
 ```tsx
 <Header>
-  <Header.Item name={T`Login`} /></Header.Item>
+  <Header.Item name={T`Login`} />
 </Header>
 ```
 
