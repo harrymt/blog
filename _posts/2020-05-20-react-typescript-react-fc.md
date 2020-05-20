@@ -202,5 +202,5 @@ But due to unnecessary addition of children, that you normally do not need, you 
 ### More reading
 
 - [create-react-app issue to remove React.FC](https://github.com/facebook/create-react-app/pull/8177)
-- [React Typescript Cheet Sheet, React.FC](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components)
+- [React Typescript Cheat Sheet, React.FC](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components)
 
