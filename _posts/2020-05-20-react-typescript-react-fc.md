@@ -34,7 +34,7 @@ const Header = () => {
 }
 ```
 
-- Wondering [what the `T` is about](javascript:alert('coming soon'))
+- wondering [what the `T` is about](javascript:alert('coming soon'))?
 
 With React component props, use:
 
@@ -63,7 +63,7 @@ const Header = ({ loading }: { loading: boolean }) => {
 
 ## Pros of React.FC
 
-1. Help with Component props
+#### 1. Helps with Component props
 
 React components have by default 4 props, e.g. `Header.displayName`.
 
@@ -81,10 +81,11 @@ interface FC<P = {}> {
 With `React.FC` interface I get typings for these props, otherwise we get this type error:
 
 ```
-Property 'displayName' does not exist on type '() => Element'.ts(2339)
+Property 'displayName' does not exist on
+type '() => Element'.ts(2339)
 ```
 
-2. Gives access to typed children
+#### 2. Gives access to typed children
 
 ```tsx
 const Header: React.FC<{ loading: boolean }> = ({ loading, children }) => {
@@ -124,15 +125,18 @@ const Header = ({ loading, children } : { loading: boolean; children: React.Reac
 
 ## Cons of React.FC
 
-1. You cannot return `undefined` from a React component, and even with the `React.FC` type, the compiler will only tell you at runtime.
+#### 1. Doesn't help with returning undefined
+
+You cannot return `undefined` from a React component, and even with the `React.FC` type, the compiler will only tell you at runtime.
 
 ```
 Runtime error:
-Header(...): Nothing was returned from render. This usually means a return statement is missing.
+Header(...): Nothing was returned from render.
+This usually means a return statement is missing.
 Or, to render nothing, return null.
 ```
 
-2. Provides access to `props.children` when you may not want it
+#### 2. Provides access to `props.children` when you may not want it
 
 With `React.FC` I can put children under my component and they won't render but will be typed correctly.
 
@@ -158,7 +162,8 @@ const Header = () => {
 }
 
 export const Example = () => {
-  // Type error: Property 'children' does not exist on type 'IntrinsicAttributes & { loading: any; }'. ts(2322)
+  // Type error: Property 'children' does not exist on type
+  // 'IntrinsicAttributes & { loading: any; }'. ts(2322)
   return (
     <Header>
       <p>{T`Children`}</p>
@@ -168,17 +173,19 @@ export const Example = () => {
 ```
 
 
-3. Prevent a Component pattern without additional types
+#### 3. Difficulty creating a Sub.Component pattern
 
-I am unable to do create this pattern (without adding lots of additional workarounds) with `React.FC`
+It is very difficult to create the typical Component and Component.SubComponent pattern (without adding lots of additional workarounds) with `React.FC`.
+
+e.g. without `React.FC`, to create this:
 
 ```tsx
 <Header>
-  <Header.Item name={T`Login`} />
+  <Header.Item name={T`Login`} /></Header2.Item>
 </Header>
 ```
 
-Without it, simply
+the types are simply
 
 ```tsx
 const Header = ({ children }) => <header>{children}</header>
@@ -192,8 +199,8 @@ Header.Item = ({ name }) => <p>{name}</p>
 But due to unnecessary addition of children, that you normally do not need, you should stay away and simply type like a normal Typescript function.
 
 
-##### More reading
+### More reading
 
-- https://github.com/facebook/create-react-app/pull/8177
-- https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components
+- [create-react-app issue to remove React.FC](https://github.com/facebook/create-react-app/pull/8177)
+- [React Typescript Cheet Sheet, React.FC](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components)
 
