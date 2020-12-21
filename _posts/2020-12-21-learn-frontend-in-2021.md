@@ -4,6 +4,8 @@ title: Learn Frontend in 2021
 tags:
   - react
   - typescript
+  - CSS
+  - scss
 ---
 
 Frontend engineer changes every year. Different technologies, libraries and techniques.
