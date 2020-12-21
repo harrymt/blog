@@ -11,8 +11,8 @@ This series is everything you need to know to get up to scratch with Frontend En
 
 In this part, we will go over
 
-- [JavaScript]()
-- [CSS]()
+- [JavaScript](#modern-arrays-strings-objects-and-functions)
+- [CSS](#css)
 
 
 ## Modern Arrays, Strings, Objects and Functions
