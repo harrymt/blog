@@ -60,7 +60,7 @@ harry = 27 // ERROR harry is used before it's declared
 
 console.log(harry)
 
-let harry = 31 // ERROR cannot re-declare harry
+let harry = 31
 
 console.log(harry)
 ```
