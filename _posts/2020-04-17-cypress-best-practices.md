@@ -17,8 +17,9 @@ Here are some best practices and common mistakes I found for working with this l
 6. [Control Data](#6-control-data)
 7. [How to Debug Failing Tests](#7-how-to-debug-failing-tests)
 
+### Cypress
 
-- [Cypress.io](https://www.cypress.io/)
+Find out more information at [Cypress.io](https://www.cypress.io/).
 
 ## 1. Selecting Elements
 
