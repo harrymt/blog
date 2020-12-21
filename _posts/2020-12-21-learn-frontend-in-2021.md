@@ -20,7 +20,7 @@ In this part, we will go over
 Quickly to recap some common advanced techniques using JavaScript and Typescript types.
 
 
-#### Variables
+### Variables
 
 Don't use `var` use `let` or `const`.
 
@@ -66,7 +66,7 @@ console.log(harry)
 ```
 
 
-#### Arrays
+### Arrays
 
 ```tsx
 // Arrays can have anything inside
@@ -99,7 +99,7 @@ console.log(third) // 3
 ```
 
 
-#### Strings
+### Strings
 
 Strings are quite straightforward and have loads of classic functions on the type.
 
@@ -153,7 +153,7 @@ const id = '1000'
 age + id // 1027
 ```
 
-#### Objects
+### Objects
 
 Similar to arrays you can destructure objects too!
 
@@ -196,7 +196,7 @@ console.log(newData.age) // 35
 
 This seems almost pointless in this example, but it leads us onto a point about functions...
 
-#### Functions
+### Functions
 
 My first programming language was VB.NET. When you defined a function with arguments you had to state
 if you wanted to copy the input value ByVal or use a reference to it ByRef.
@@ -283,7 +283,7 @@ func()
 Everyone has seen the [family guy css gif](https://giphy.com/gifs/frustrated-annoyed-programming-yYSSBtDgbbRzq).
 
 
-#### SASS
+### SASS
 
 Use [sass](https://sass-lang.com/). It's great and is better than CSS.
 The main benefit is that you can have nested selectors, e.g.
@@ -310,7 +310,7 @@ This transpiles down to
 }
 ```
 
-#### CSS variables
+### CSS variables
 
 Projects often define CSS variables, such as a spacing multiple.
 You can access these using the var key word.
@@ -321,7 +321,7 @@ You can access these using the var key word.
 }
 ```
 
-#### CSS Modules
+### CSS Modules
 
 This is a great method to write CSS. As they prevent leaky CSS.
 
@@ -381,7 +381,7 @@ it will always be unique.
 (in dev mode, localhost you will see a helpful name like the path to your component, but in production it will be random).
 
 
-#### Interacting with libraries
+### Interacting with libraries
 
 To interact with libraries that haven't been 'css moduled', you need to use the global keyword to target those selectors.
 e.g.
@@ -417,7 +417,7 @@ export const Panel = ({ title }: { title: string }) => {
 }
 ```
 
-#### Specificty 
+### Specificty 
 
 The more targeted a selector the more specific it is and the higher specificity it has.
 The highest specificity results in the selector that gets chosen.
